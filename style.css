@@ -200,9 +200,9 @@ main {
     position: relative;
 }
   
-.slider-controls a:active {
+/* .slider-controls a:active {
     top: 1px;
-}r
+} */
 
 .slider-controls a:focus, .slider-controls a:hover {
     background: #000;
