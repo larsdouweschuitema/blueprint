@@ -3,6 +3,8 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 100%;
+    font-family: "Poppins", sans-serif;
 }
 
 header {
@@ -235,6 +237,14 @@ section {
 
 section h1, section h2, section p {
     margin: 0 0 16px 0;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+p {
+    font-weight: 300;
 }
 
 .features-area {
