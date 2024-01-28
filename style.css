@@ -19,11 +19,6 @@ header a {
     padding-left: 16px;
 }
 
-section {
-    background-color: chocolate;
-    padding: 16px;
-}
-
 main {
     background-color: aquamarine;
     flex: 1;
@@ -130,6 +125,89 @@ main {
 .hamburger .slice:not(:first-child) {
     margin-top: 8px;
 }
+
+/* https://demo.voidcoders.com/htmldemo/rexfit/main-files/index.html */
+/* https://css-tricks.com/css-only-carousel/ */
+/* START SLIDER */
+
+.slider {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+} */
+  
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 300px;
+    margin-right: 50px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    box-sizing: border-box;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-controls a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: red;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+}
+  
+.slider-controls a:active {
+    top: 1px;
+}r
+
+.slider-controls a:focus, .slider-controls a:hover {
+    background: #000;
+}
+
+/* END SLIDER */
 
 footer {
     background-color: blueviolet;
