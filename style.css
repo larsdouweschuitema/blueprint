@@ -7,7 +7,16 @@ body {
 
 header {
     background-color: darkgoldenrod;
-    padding: 16px;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    padding-left: 16px;
 }
 
 section {
@@ -19,6 +28,53 @@ main {
     background-color: aquamarine;
     flex: 1;
     padding: 16px;
+}
+
+nav {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    top: 61px;
+    width: 100%;
+}
+
+nav ul {
+    background-color: chartreuse;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* display: flex; */
+}
+
+nav a {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a:hover, nav a:focus {
+    background-color: yellow;
+}
+
+#menu-toggle:checked + nav,
+#menu-toggle:focus + nav {
+  display: block;
+}
+
+.mobile-menu-icon {
+    /* display: none; */
+    flex-direction: column;
+    cursor: pointer;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+  
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
 }
 
 footer {
