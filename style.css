@@ -41,34 +41,34 @@ main {
     transition: visibility 0.5s linear;
 }
   
-.hamburger-container #menu-toggle:checked ~ .drawer a {
+.hamburger-container .hamburger-checkbox:checked ~ .drawer a {
     visibility: visible;
 }
 
-#menu-toggle {
+.hamburger-checkbox {
     transition: transform 0.5s ease;
     opacity: 0;
     cursor: pointer;
     position: absolute;
 }
 
-#menu-toggle:checked ~ .drawer {
+.hamburger-checkbox:checked ~ .drawer {
     transform: translateX(0%);
 }
 
-#menu-toggle:checked ~ label .slice:nth-child(1) {
+.hamburger-checkbox:checked ~ label .slice:nth-child(1) {
     transform: translateY(10px) rotate(45deg);
 }
 
-#menu-toggle:checked ~ label .slice:nth-child(2) {
+.hamburger-checkbox:checked ~ label .slice:nth-child(2) {
     opacity: 0;
 }
 
-#menu-toggle:checked ~ label .slice:nth-child(3) {
+.hamburger-checkbox:checked ~ label .slice:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
 }
 
-#menu-toggle:checked ~ .drawer a {
+.hamburger-checkbox:checked ~ .drawer a {
     visibility: visible;
 }
 
