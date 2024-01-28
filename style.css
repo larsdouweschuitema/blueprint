@@ -30,51 +30,105 @@ main {
     padding: 16px;
 }
 
-nav {
-    display: none;
-    z-index: 10;
+/* https://unused-css.com/blog/css-only-hamburger-menu/ */
+.hamburger-container {
+    display: flex;
+    margin-right: 16px;
+}
+
+.hamburger-container .drawer a {
+    visibility: hidden;
+    transition: visibility 0.5s linear;
+}
+  
+.hamburger-container #menu-toggle:checked ~ .drawer a {
+    visibility: visible;
+}
+
+#menu-toggle {
+    transition: transform 0.5s ease;
+    opacity: 0;
+    cursor: pointer;
     position: absolute;
-    top: 61px;
+}
+
+#menu-toggle:checked ~ .drawer {
+    transform: translateX(0%);
+}
+
+#menu-toggle:checked ~ label .slice:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+#menu-toggle:checked ~ label .slice:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked ~ label .slice:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+#menu-toggle:checked ~ .drawer a {
+    visibility: visible;
+}
+
+.drawer {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: max-content;
+    max-width: 100%;
+    padding: 22px;
+    background: black;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
     width: 100%;
 }
 
-nav ul {
-    background-color: chartreuse;
-    list-style: none;
-    margin: 0;
+@media screen and (min-width: 768px) {
+    .drawer {
+      width: 30vw;
+    }
+}
+
+.drawer ul {
     padding: 0;
-    width: 100%;
-    /* display: flex; */
+    list-style: none;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
-nav a {
+.drawer a {
     display: block;
     padding-top: 10px;
     padding-bottom: 10px;
+    visibility: hidden;
+    transition: visibility 0.5s linear;
 }
 
-nav a:hover, nav a:focus {
+.drawer a:hover, .drawer a:focus {
     background-color: yellow;
 }
 
-#menu-toggle:checked + nav,
-#menu-toggle:focus + nav {
-  display: block;
-}
-
-.mobile-menu-icon {
-    /* display: none; */
+.hamburger {
+    height: 24px;
+    width: 32px;
     flex-direction: column;
     cursor: pointer;
-    padding-right: 16px;
-    padding-left: 16px;
+    z-index: 10;
 }
   
-.bar {
-    width: 25px;
+.slice {
+    display: block;
+    width: 100%;
     height: 3px;
     background-color: #fff;
-    margin: 5px 0;
+    transition: all 0.5s ease;
+}
+
+.hamburger .slice:not(:first-child) {
+    margin-top: 8px;
 }
 
 footer {
