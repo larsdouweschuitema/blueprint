@@ -244,18 +244,18 @@ nav a {
 }
 
 .slides div::before {
-    position: absolute;
-    content: '';
-    background-color: #101013;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    opacity: .70;
+  position: absolute;
+  content: "";
+  background-color: #101013;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
 }
 
 #slide-1 {
-    background-image: url('assets/img/hero.webp');
+  background-image: url("assets/img/hero.webp");
 }
 
 .slider-controls {
@@ -345,12 +345,40 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
-  padding: 0 8px;
+  padding: 0;
+  top: -157px;
+  position: relative;
+  box-shadow: 0px 0px 55px 0px rgba(17, 22, 29, 0.1);
 }
 
 .features-column {
   flex: 1;
-  margin: 0 8px;
+  background: white;
+  border: 1px solid #f1f1f1;
+  padding: 16px;
+  min-height: 300px;
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+}
+
+.features-column:nth-child(1),
+.features-column:hover {
+  background-color: #e40613;
+  border-color: #e40613;
+}
+
+.features-column:hover h2,
+.features-column:hover p,
+.features-column:nth-child(1) h2,
+.features-column:nth-child(1) p {
+  color: white;
+}
+
+.features-column h2 {
+  font-size: 24px;
 }
 
 @media screen and (min-width: 768px) {
