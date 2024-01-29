@@ -896,6 +896,7 @@ address {
 }
 
 .back-to-top {
+  opacity: 0;
   position: fixed;
   bottom: 16px;
   right: 16px;
@@ -921,3 +922,8 @@ address {
 :target #top {
   top: 0;
 }
+
+.show {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
