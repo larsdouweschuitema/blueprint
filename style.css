@@ -248,16 +248,6 @@ nav a {
   -webkit-overflow-scrolling: touch;
 }
 
-/* .slides::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-.slides::-webkit-scrollbar-thumb {
-    background: black;
-    border-radius: 10px;
-} */
-
 .slides::-webkit-scrollbar-track {
   background: transparent;
 }
@@ -298,15 +288,15 @@ nav a {
 }
 
 #slide-2 {
-  background-image: url("assets/img/hero-5.webp");
+  background-image: url("assets/img/hero-13.jpg");
 }
 
 #slide-3 {
-  background-image: url("assets/img/hero-3.webp");
+  background-image: url("assets/img/hero-11.jpg");
 }
 
 #slide-4 {
-  background-image: url("assets/img/hero.webp");
+  background-image: url("assets/img/hero-5.webp");
 }
 
 .slider-controls {
