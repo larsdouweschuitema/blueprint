@@ -377,6 +377,12 @@ section:first-child {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  main section:nth-child(2) {
+    margin-top: -101px;
+  }
+}
+
 h2,
 h3,
 h4,
@@ -526,6 +532,13 @@ a.btn-style-a::after {
   display: flex;
   gap: 16px;
   align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+  .featured-services__row {
+    flex-direction: row;
+  }
 }
 
 .featured-services__row:first-child {
@@ -552,7 +565,6 @@ a.btn-style-a::after {
   flex: 1;
   background: white;
   border: 1px solid #f1f1f1;
-  padding: 32px 16px;
   margin-bottom: 16px;
   -webkit-transition: all 0.75s ease;
   -moz-transition: all 0.75s ease;
@@ -562,6 +574,12 @@ a.btn-style-a::after {
   text-decoration: none;
   animation: fadeInUp 1s forwards;
   animation-delay: 0.15s;
+}
+
+@media screen and (min-width: 1024px) {
+  .features-column {
+    padding: 32px 16px;
+  }
 }
 
 .features-column i {
@@ -618,14 +636,14 @@ a.btn-style-a::after {
 .featured-services__text-container {
   position: relative;
   overflow: hidden;
+  display: flex;
 }
 
 .featured-services__text {
   position: absolute;
-  top: 32px;
   left: -100%;
-  height: calc(100% - 96px);
-  width: calc(100% - 96px);
+  height: calc(100% - 32px);
+  width: calc(100% - 32px);
   background-color: rgba(228, 6, 19, 0.8);
   transition: 0.5s ease;
   overflow: hidden;
@@ -633,7 +651,7 @@ a.btn-style-a::after {
 }
 
 .featured-services__text-container:hover .featured-services__text {
-  left: 32px;
+  left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -641,15 +659,21 @@ a.btn-style-a::after {
   text-align: center;
 }
 
+@media screen and (min-width: 1024px) {
+  .featured-services__text {
+    top: 32px;
+    height: calc(100% - 96px);
+    width: calc(100% - 96px);
+  }
+
+  .featured-services__text-container:hover .featured-services__text {
+    left: 32px;
+  }
+}
+
 .featured-services__text h3,
 .featured-services__text p {
   color: white;
-}
-
-@media screen and (min-width: 1024px) {
-  main section:nth-child(2) {
-    margin-top: -101px;
-  }
 }
 
 .get-in-touch-area {
