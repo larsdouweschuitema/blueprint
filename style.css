@@ -72,12 +72,6 @@ p {
   }
 }
 
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 /* CONTAINER END */
 
 /* https://unused-css.com/blog/css-only-hamburger-menu/ */
@@ -384,7 +378,7 @@ p {
   margin-top: 16px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .features-area {
     flex-direction: row;
   }
