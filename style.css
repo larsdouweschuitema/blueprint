@@ -487,6 +487,12 @@ a.button-b:hover {
   border: 1px white solid;
 }
 
+a.button-c:hover {
+  background: black;
+  color: white !important;
+  border: 1px black solid;
+}
+
 a.button:hover::before {
   opacity: 0;
   transform: scale(0.5, 0.5);
@@ -515,7 +521,13 @@ a.button::before {
   background-color: #e40613;
 }
 
-a.btn-style-a::after {
+a.button-c::before {
+  background-color: transparent;
+  color: white !important;
+  border: 1px white solid;
+}
+
+a.button::after {
   opacity: 0;
   border: 1px;
 }
@@ -578,6 +590,7 @@ a.btn-style-a::after {
 
 @media screen and (min-width: 1024px) {
   .features-column {
+    margin-bottom: 0;
     padding: 32px 16px;
   }
 }
@@ -790,6 +803,7 @@ a.btn-style-a::after {
 
   .outro-content {
     flex: 0 0 calc(60% - 16px);
+    margin-top: 0;
     margin-bottom: 0;
   }
 
