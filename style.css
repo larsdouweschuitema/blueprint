@@ -19,9 +19,9 @@ body {
 }
 
 .topbar-area-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* CONTAINER START */
@@ -50,11 +50,11 @@ body {
   }
 }
 
-@media (min-width: 1280) {
-    .container {
-      max-width: 1280;
-    }
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
   }
+}
 
 @media (min-width: 1536px) {
   .container {
