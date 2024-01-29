@@ -311,9 +311,15 @@ nav a {
 
 .slider-controls {
   position: absolute;
-  bottom: 100px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@media screen and (min-width: 1024px) {
+  .slider-controls {
+    bottom: 100px;
+  }
 }
 
 .slider-controls a {
@@ -327,7 +333,6 @@ nav a {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  margin: 0 0 0.5rem 0;
   position: relative;
 }
 
