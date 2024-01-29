@@ -5,16 +5,32 @@ body {
   min-height: 100vh;
   font-size: 100%;
   font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  color: #e40613;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: #fc0513;
+}
+
+p {
+  max-width: 40rem;
 }
 
 .topbar-area {
-  background-color: darkgoldenrod;
   padding: 16px 0;
+  z-index: 10;
 }
 
 .topbar-area a {
   color: #fff;
-  text-decoration: none;
   padding-left: 16px;
 }
 
@@ -113,12 +129,12 @@ body {
   height: 100%;
   width: max-content;
   max-width: 100%;
-  padding: 22px;
   background: black;
   transform: translateX(-100%);
   transition: transform 0.5s ease;
   width: 100%;
-  z-index: 10;
+  z-index: 20;
+  padding-top: 57px;
 }
 
 @media screen and (min-width: 768px) {
@@ -127,24 +143,28 @@ body {
   }
 }
 
-.drawer ul {
-  padding: 0;
+nav ul {
   list-style: none;
-  margin-top: 30px;
-  margin-left: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 .drawer a {
   display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 16px;
   visibility: hidden;
   transition: visibility 0.5s linear;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  text-transform: uppercase;
 }
 
 .drawer a:hover,
 .drawer a:focus {
-  background-color: yellow;
+  color: #fc0513;
 }
 
 .hamburger {
@@ -152,7 +172,7 @@ body {
   width: 32px;
   flex-direction: column;
   cursor: pointer;
-  z-index: 20;
+  z-index: 30;
 }
 
 .slice {
@@ -177,6 +197,7 @@ body {
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
+  top: -57px;
 }
 
 .slides {
@@ -201,11 +222,10 @@ body {
   background: transparent;
 }
 
-.slides div {
+.slides .slide {
   scroll-snap-align: start;
   flex-shrink: 0;
   width: 100%;
-  height: 400px;
   margin-right: 50px;
   background: #999;
   transform-origin: center center;
@@ -217,6 +237,25 @@ body {
   align-items: center;
   font-size: 100px;
   box-sizing: border-box;
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slides div::before {
+    position: absolute;
+    content: '';
+    background-color: #101013;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: .70;
+}
+
+#slide-1 {
+    background-image: url('assets/img/hero.webp');
 }
 
 .slider-controls {
@@ -228,9 +267,10 @@ body {
 
 .slider-controls a {
   display: inline-flex;
-  width: 1.5rem;
-  height: 1.5rem;
-  background: red;
+  width: 1rem;
+  height: 1rem;
+  background: white;
+  border: 2px white solid;
   color: white;
   text-decoration: none;
   align-items: center;
@@ -246,7 +286,8 @@ body {
 
 .slider-controls a:focus,
 .slider-controls a:hover {
-  background: #000;
+  background: transparent;
+  border: 2px white solid;
 }
 
 /* END SLIDER */
@@ -254,6 +295,22 @@ body {
 main {
   flex: 1;
   padding: 16px 0;
+}
+
+main h1,
+main h2,
+main h3,
+main h5,
+main h6 {
+  color: #e40613;
+  text-transform: capitalize;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+main p {
+  color: #403f4a;
 }
 
 section {
@@ -280,7 +337,7 @@ h6 {
 }
 
 p {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .features-area {
@@ -304,6 +361,10 @@ p {
 
 footer {
   background-color: #2e2e2e;
+  color: white;
+}
+
+footer a {
   color: white;
 }
 
@@ -332,10 +393,24 @@ footer {
   margin: 0 8px 48px 8px;
 }
 
+.footer-column h4 {
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 36px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
   .footer-column {
     margin-bottom: 0;
   }
+}
+
+.footer-menu {
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 400;
 }
 
 .opening-hours {
