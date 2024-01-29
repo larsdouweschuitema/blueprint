@@ -577,6 +577,7 @@ a.button::after {
   flex: 1;
   background: white;
   border: 1px solid #f1f1f1;
+  padding: 32px 16px;
   margin-bottom: 16px;
   -webkit-transition: all 0.75s ease;
   -moz-transition: all 0.75s ease;
@@ -591,7 +592,6 @@ a.button::after {
 @media screen and (min-width: 1024px) {
   .features-column {
     margin-bottom: 0;
-    padding: 32px 16px;
   }
 }
 
@@ -892,4 +892,31 @@ address {
   font-size: 32px;
   margin: 0 4px;
   text-decoration: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: #e40613;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+
+.back-to-top:hover, 
+.back-to-top:focus {
+  background-color: black;
+  color: white;
+}
+
+:target .back-to-top {
+  display: block;
+}
+
+:target #top {
+  top: 0;
 }
