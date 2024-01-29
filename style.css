@@ -303,23 +303,23 @@ p {
 }
 
 footer {
-    background-color: #2e2e2e;
-    color: white;
-  }
-  
+  background-color: #2e2e2e;
+  color: white;
+}
+
+.footer-widget-area {
+  padding: 56px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
   .footer-widget-area {
-    padding: 56px 8px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
   }
-  
-  @media screen and (min-width: 768px) {
-    .footer-widget-area {
-      flex-direction: row;
-    }
-  }
+}
 
 .footer-copyright {
   background: #161616;
@@ -329,7 +329,13 @@ footer {
 
 .footer-column {
   flex: 1;
-  margin: 0 8px;
+  margin: 0 8px 48px 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-column {
+    margin-bottom: 0;
+  }
 }
 
 .opening-hours {
