@@ -193,12 +193,24 @@ nav a {
   .hamburger-container .drawer a {
     padding: inherit;
     visibility: visible;
-    border-bottom: 0;
+    border: 1px transparent solid;
     margin-right: 32px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    padding: 8px 0;
   }
 
   .hamburger-container .drawer li:last-child a {
+    background: red;
     margin-right: 0;
+    padding: 8px 16px;
+  }
+
+  .hamburger-container .drawer li:last-child a:hover,
+  .hamburger-container .drawer li:last-child a:focus {
+    background: transparent;
+    border: 1px white solid;
+    color: white;
   }
 }
 
@@ -282,15 +294,15 @@ nav a {
 }
 
 #slide-1 {
-  background-image: url("assets/img/hero.webp");
+  background-image: url("assets/img/hero-4.webp");
 }
 
 #slide-2 {
-  background-image: url("assets/img/hero.webp");
+  background-image: url("assets/img/hero-5.webp");
 }
 
 #slide-3 {
-  background-image: url("assets/img/hero.webp");
+  background-image: url("assets/img/hero-3.webp");
 }
 
 #slide-4 {
@@ -306,8 +318,8 @@ nav a {
 
 .slider-controls a {
   display: inline-flex;
-  width: 1rem;
-  height: 1rem;
+  width: 0.5rem;
+  height: 0.5rem;
   background: white;
   border: 2px white solid;
   color: white;
@@ -333,7 +345,6 @@ nav a {
 
 main {
   flex: 1;
-  padding: 16px 0;
 }
 
 main h1,
@@ -353,7 +364,17 @@ main p {
 }
 
 section {
-  margin-bottom: 128px;
+  margin-bottom: 96px;
+}
+
+section:first-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  section {
+    margin-bottom: 128px;
+  }
 }
 
 h2,
@@ -384,6 +405,7 @@ p {
   opacity: 0;
   animation: fadeInLeft 1s ease forwards;
   animation-delay: 0.35s;
+  margin-bottom: 16px;
 }
 
 .intro-image-container {
@@ -400,6 +422,7 @@ p {
 
   .intro-content {
     flex: 0 0 calc(40% - 16px);
+    margin-bottom: 0;
   }
 
   .intro-image-container {
@@ -437,6 +460,7 @@ p {
 }
 
 a.button {
+  border: 1px #e40613 solid;
   position: relative;
   font-size: 16px;
   letter-spacing: 0px;
@@ -450,7 +474,6 @@ a.button {
 
 a.button:hover {
   color: #e40613 !important;
-  border: 1px #e40613 solid;
 }
 
 a.button-b:hover {
@@ -521,9 +544,8 @@ a.btn-style-a::after {
   justify-content: space-between;
   flex-direction: column;
   padding: 0;
-  top: -219px;
+  top: -71px;
   position: relative;
-  box-shadow: 0px 0px 55px 0px rgba(17, 22, 29, 0.1);
 }
 
 .features-column {
@@ -531,6 +553,7 @@ a.btn-style-a::after {
   background: white;
   border: 1px solid #f1f1f1;
   padding: 32px 16px;
+  margin-bottom: 16px;
   -webkit-transition: all 0.75s ease;
   -moz-transition: all 0.75s ease;
   -ms-transition: all 0.75s ease;
@@ -539,6 +562,10 @@ a.btn-style-a::after {
   text-decoration: none;
   animation: fadeInUp 1s forwards;
   animation-delay: 0.15s;
+}
+
+.features-column i {
+  font-size: 40px;
 }
 
 @keyframes fadeInUp {
@@ -579,6 +606,12 @@ a.btn-style-a::after {
 @media screen and (min-width: 1024px) {
   .features-area {
     flex-direction: row;
+    top: -219px;
+    box-shadow: 0px 0px 55px 0px rgba(17, 22, 29, 0.1);
+  }
+
+  .featured-column {
+    margin-bottom: 0;
   }
 }
 
@@ -613,8 +646,10 @@ a.btn-style-a::after {
   color: white;
 }
 
-main section:nth-child(2) {
-  margin-top: -101px;
+@media screen and (min-width: 1024px) {
+  main section:nth-child(2) {
+    margin-top: -101px;
+  }
 }
 
 .get-in-touch-area {
@@ -680,6 +715,70 @@ main section:nth-child(2) {
 
 .get-in-touch-area a {
   align-self: flex-start;
+}
+
+.courses-area {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+.courses-area div {
+  flex: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .courses-area {
+    flex-direction: row;
+  }
+}
+
+.outro .container {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.outro .container h1 {
+  margin-top: 0;
+}
+
+.outro-content {
+  opacity: 0;
+  animation: fadeInLeft 1s ease forwards;
+  animation-delay: 0.35s;
+  margin-top: 16px;
+}
+
+.outro-image-container {
+  opacity: 0;
+  animation: fadeInRight 1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+@media screen and (min-width: 768px) {
+  .outro .container {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .outro-content {
+    flex: 0 0 calc(60% - 16px);
+    margin-bottom: 0;
+  }
+
+  .outro-image-container {
+    flex: 0 0 calc(40% - 16px);
+  }
+}
+
+.outro img {
+  height: auto;
+  width: 100%;
+  border: 16px #e40613 solid;
+  box-sizing: border-box;
 }
 
 footer {
@@ -752,7 +851,7 @@ address {
 }
 
 .social-icon {
-  font-size: 24px;
+  font-size: 32px;
   margin: 0 4px;
   text-decoration: none;
 }
