@@ -366,6 +366,7 @@ p {
 
 .features-column:hover h2,
 .features-column:hover p,
+.features-column:hover i,
 .features-column:nth-child(1) h2,
 .features-column:nth-child(1) p,
 .features-column:nth-child(1) {
