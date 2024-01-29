@@ -320,11 +320,7 @@ main p {
 }
 
 section {
-  margin-bottom: 56px;
-}
-
-section h2 {
-  margin-top: 128px;
+  margin-bottom: 128px;
 }
 
 h2,
@@ -549,49 +545,68 @@ main section:nth-child(2) {
 }
 
 .get-in-touch-area {
-    background: #e40613;
-    padding: 128px 0;
-    background-image: url("assets/img/hero-10.jpg");
-    background-size: cover;
-    background-position: center; 
-    position: relative;
-    min-height: 600px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
+  background: #e40613;
+  padding: 128px 0;
+  background-image: url("assets/img/hero-10.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 600px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .get-in-touch-area::before {
-    position: absolute;
-    content: '';
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-image: -moz-linear-gradient(45deg, white 0%, #333 0%, #8c0c0c 0%, black 100%);
-    background-image: -webkit-linear-gradient(45deg, white 0%, #333 0%, #8c0c0c 0%, black 100%);
-    background-image: -ms-linear-gradient(45deg, white 0%, #333 0%, #8c0c0c 0%, black 100%);
-    opacity: .80;
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-image: -moz-linear-gradient(
+    45deg,
+    white 0%,
+    #333 0%,
+    #8c0c0c 0%,
+    black 100%
+  );
+  background-image: -webkit-linear-gradient(
+    45deg,
+    white 0%,
+    #333 0%,
+    #8c0c0c 0%,
+    black 100%
+  );
+  background-image: -ms-linear-gradient(
+    45deg,
+    white 0%,
+    #333 0%,
+    #8c0c0c 0%,
+    black 100%
+  );
+  opacity: 0.8;
 }
 
 .get-in-touch-area__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.get-in-touch-area h2, .get-in-touch-area p {
-    color: white;
-    position: relative;
-    z-index: 30;
+.get-in-touch-area h2,
+.get-in-touch-area p {
+  color: white;
+  position: relative;
+  z-index: 30;
 }
 
 .get-in-touch-area h2 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .get-in-touch-area a {
-    align-self: flex-start;
+  align-self: flex-start;
 }
 
 footer {
