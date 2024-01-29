@@ -254,7 +254,7 @@ nav a {
 
 .slider-controls {
   position: absolute;
-  bottom: 0;
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
 }
