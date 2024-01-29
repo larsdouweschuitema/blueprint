@@ -353,6 +353,15 @@ p {
 
 .intro-content {
   margin-bottom: 16px;
+  opacity: 0;
+  animation: fadeInLeft 1s ease forwards;
+  animation-delay: 0.35s;
+}
+
+.intro-image-container {
+  opacity: 0;
+  animation: fadeInRight 1s ease forwards;
+  animation-delay: 0.35s;
 }
 
 @media screen and (min-width: 768px) {
@@ -363,11 +372,32 @@ p {
 
   .intro-content {
     flex: 0 0 calc(40% - 16px);
-    margin-bottom: 0;
   }
 
   .intro-image-container {
     flex: 0 0 calc(60% - 16px);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -451,14 +481,14 @@ a.btn-style-a::after {
   transition: all 0.75s ease;
   text-decoration: none;
   animation: fadeInUp 1s forwards;
-  animation-delay: 0.99s;
+  animation-delay: 0.15s;
 }
 
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
+    -webkit-transform: translate3d(0, 2000px, 0);
+    transform: translate3d(0, 2000px, 0);
   }
 
   to {
