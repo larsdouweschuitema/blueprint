@@ -453,3 +453,9 @@ footer a {
 address {
   font-style: normal;
 }
+
+.social-icon {
+  font-size: 24px;
+  margin: 0 4px;
+  text-decoration: none;
+}
