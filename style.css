@@ -1,126 +1,168 @@
 body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    font-size: 100%;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
 }
 
-header {
-    background-color: darkgoldenrod;
-    padding: 16px 0;
+.topbar-area {
+  background-color: darkgoldenrod;
+  padding: 16px 0;
+}
+
+.topbar-area a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 16px;
+}
+
+.topbar-area-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header a {
-    color: #fff;
-    text-decoration: none;
-    padding-left: 16px;
+/* CONTAINER START */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
 }
+
+/* Medium screens (641px to 768px) */
+@media (min-width: 641px) {
+  .container {
+    max-width: 641px;
+  }
+}
+
+/* Large screens (769px to 1024px) */
+@media (min-width: 769px) {
+  .container {
+    max-width: 769px;
+  }
+}
+
+/* Extra-large screens (1025px to 1280px) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1025px;
+  }
+}
+
+/* 2 Extra-large screens (1281px and above) */
+@media (min-width: 1281px) {
+  .container {
+    max-width: 1281px;
+  }
+}
+
+/* CONTAINER END */
 
 /* https://unused-css.com/blog/css-only-hamburger-menu/ */
 .hamburger-container {
-    display: flex;
-    margin-right: 16px;
+  display: flex;
+  margin-right: 16px;
 }
 
 .hamburger-container .drawer a {
-    visibility: hidden;
-    transition: visibility 0.5s linear;
+  visibility: hidden;
+  transition: visibility 0.5s linear;
 }
-  
+
 .hamburger-container .hamburger-checkbox:checked ~ .drawer a {
-    visibility: visible;
+  visibility: visible;
 }
 
 .hamburger-checkbox {
-    transition: transform 0.5s ease;
-    opacity: 0;
-    cursor: pointer;
-    position: absolute;
+  transition: transform 0.5s ease;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
 }
 
 .hamburger-checkbox:checked ~ .drawer {
-    transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 .hamburger-checkbox:checked ~ label .slice:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
+  transform: translateY(10px) rotate(45deg);
 }
 
 .hamburger-checkbox:checked ~ label .slice:nth-child(2) {
-    opacity: 0;
+  opacity: 0;
 }
 
 .hamburger-checkbox:checked ~ label .slice:nth-child(3) {
-    transform: translateY(-12px) rotate(-45deg);
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 .hamburger-checkbox:checked ~ .drawer a {
-    visibility: visible;
+  visibility: visible;
 }
 
 .drawer {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: max-content;
-    max-width: 100%;
-    padding: 22px;
-    background: black;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease;
-    width: 100%;
-    z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: max-content;
+  max-width: 100%;
+  padding: 22px;
+  background: black;
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  width: 100%;
+  z-index: 10;
 }
 
 @media screen and (min-width: 768px) {
-    .drawer {
-      width: 30vw;
-    }
+  .drawer {
+    width: 30vw;
+  }
 }
 
 .drawer ul {
-    padding: 0;
-    list-style: none;
-    margin-top: 30px;
-    margin-left: 20px;
+  padding: 0;
+  list-style: none;
+  margin-top: 30px;
+  margin-left: 20px;
 }
 
 .drawer a {
-    display: block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    visibility: hidden;
-    transition: visibility 0.5s linear;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  visibility: hidden;
+  transition: visibility 0.5s linear;
 }
 
-.drawer a:hover, .drawer a:focus {
-    background-color: yellow;
+.drawer a:hover,
+.drawer a:focus {
+  background-color: yellow;
 }
 
 .hamburger {
-    height: 24px;
-    width: 32px;
-    flex-direction: column;
-    cursor: pointer;
-    z-index: 20;
+  height: 24px;
+  width: 32px;
+  flex-direction: column;
+  cursor: pointer;
+  z-index: 20;
 }
-  
+
 .slice {
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    transition: all 0.5s ease;
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  transition: all 0.5s ease;
 }
 
 .hamburger .slice:not(:first-child) {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 /* https://demo.voidcoders.com/htmldemo/rexfit/main-files/index.html */
@@ -128,19 +170,19 @@ header a {
 /* START SLIDER */
 
 .slider {
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-    box-sizing: border-box;
-    position: relative;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
 }
 
 .slides {
-    display: flex;
-    overflow-x: hidden;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 /* .slides::-webkit-scrollbar {
@@ -152,127 +194,131 @@ header a {
     background: black;
     border-radius: 10px;
 } */
-  
+
 .slides::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
 .slides div {
-    scroll-snap-align: start;
-    flex-shrink: 0;
-    width: 100%;
-    height: 400px;
-    margin-right: 50px;
-    background: #999;
-    transform-origin: center center;
-    transform: scale(1);
-    transition: transform 0.5s;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-    box-sizing: border-box;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 400px;
+  margin-right: 50px;
+  background: #999;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  box-sizing: border-box;
 }
 
 .slider-controls {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .slider-controls a {
-    display: inline-flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    background: red;
-    color: white;
-    text-decoration: none;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 0 0 0.5rem 0;
-    position: relative;
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: red;
+  color: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
 }
-  
+
 /* .slider-controls a:active {
     top: 1px;
 } */
 
-.slider-controls a:focus, .slider-controls a:hover {
-    background: #000;
+.slider-controls a:focus,
+.slider-controls a:hover {
+  background: #000;
 }
 
 /* END SLIDER */
 
 footer {
-    background-color: #2e2e2e;
-    color: white;
+  background-color: #2e2e2e;
+  color: white;
 }
 
 .footer-widget-area {
-    padding: 16px 8px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
+  padding: 16px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 768px) {
-    .footer-widget-area {
-        flex-direction: row;
-    }
+  .footer-widget-area {
+    flex-direction: row;
+  }
 }
 
 main {
-    flex: 1;
-    padding: 16px 0;
+  flex: 1;
+  padding: 16px 0;
 }
 
 section {
-    padding: 0 16px;
-    margin-bottom: 56px;
+  margin-bottom: 56px;
 }
 
-section h1, section h2, section p {
-    margin: 0 0 16px 0;
+section h1,
+section h2,
+section p {
+  margin: 0 0 16px 0;
 }
 
-h1, h2, h3 {
-    font-weight: 500;
+h1,
+h2,
+h3 {
+  font-weight: 500;
 }
 
 p {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .features-area {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 0 8px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 8px;
 }
 
 .features-column {
-    flex: 1;
-    margin: 0 8px;
+  flex: 1;
+  margin: 0 8px;
 }
 
 @media screen and (min-width: 768px) {
-    .features-area {
-        flex-direction: row;
-    }
+  .features-area {
+    flex-direction: row;
+  }
 }
 
 .footer-copyright {
-    background: #161616;
-    padding: 16px;
-    text-align: center;
+  background: #161616;
+  padding: 16px;
+  text-align: center;
 }
 
 .footer-column {
-    flex: 1;
-    margin: 0 8px;
+  flex: 1;
+  margin: 0 8px;
 }
