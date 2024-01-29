@@ -75,6 +75,11 @@ p {
 /* CONTAINER END */
 
 /* https://unused-css.com/blog/css-only-hamburger-menu/ */
+
+.logo {
+    flex: 1;
+}
+
 .hamburger-container {
   display: flex;
   margin-right: 16px;
@@ -128,13 +133,16 @@ p {
   transition: transform 0.5s ease;
   width: 100%;
   z-index: 20;
-  padding-top: 57px;
+  padding-top: 119px;
 }
 
-@media screen and (min-width: 768px) {
-  .drawer {
-    width: 30vw;
-  }
+.drawer a {
+  display: block;
+  padding: 16px;
+  visibility: hidden;
+  transition: visibility 0.5s linear;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  text-transform: uppercase;
 }
 
 nav ul {
@@ -145,15 +153,6 @@ nav ul {
 
 nav a {
   text-decoration: none;
-}
-
-.drawer a {
-  display: block;
-  padding: 16px;
-  visibility: hidden;
-  transition: visibility 0.5s linear;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-  text-transform: uppercase;
 }
 
 .drawer a:hover,
@@ -167,6 +166,40 @@ nav a {
   flex-direction: column;
   cursor: pointer;
   z-index: 30;
+}
+
+@media screen and (min-width: 768px) {
+  .drawer {
+    background: transparent;
+    position: static;
+    padding-top: inherit;
+    transform: none;
+  }
+
+  .hamburger,
+  .hamburger-container input,
+  .hamburger-container label {
+    display: none;
+  }
+
+  .hamburger-container {
+    margin-right: 0;
+  }
+
+  .drawer ul {
+    display: flex;
+  }
+
+  .hamburger-container .drawer a {
+    padding: inherit;
+    visibility: visible;
+    border-bottom: 0;
+    margin-right: 32px;
+  }
+
+  .hamburger-container .drawer li:last-child a {
+    margin-right: 0;
+  }
 }
 
 .slice {
@@ -191,7 +224,7 @@ nav a {
   overflow: hidden;
   box-sizing: border-box;
   position: relative;
-  top: -57px;
+  top: -119px;
 }
 
 .slides {
@@ -344,7 +377,7 @@ p {
 }
 
 .intro .container h1 {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .intro-content {
@@ -483,7 +516,7 @@ a.btn-style-a::after {
   justify-content: space-between;
   flex-direction: column;
   padding: 0;
-  top: -157px;
+  top: -219px;
   position: relative;
   box-shadow: 0px 0px 55px 0px rgba(17, 22, 29, 0.1);
 }
