@@ -324,7 +324,7 @@ section {
 }
 
 section h2 {
-    margin-top: 128px;
+  margin-top: 128px;
 }
 
 h2,
@@ -463,10 +463,12 @@ a.btn-style-a::after {
 
 .featured-services__row {
   display: flex;
-  /* flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px; */
   gap: 16px;
+  align-items: center;
+}
+
+.featured-services__row:first-child {
+  flex-direction: column;
 }
 
 .featured-services__image {
@@ -544,6 +546,52 @@ a.btn-style-a::after {
 
 main section:nth-child(2) {
   margin-top: -101px;
+}
+
+.get-in-touch-area {
+    background: #e40613;
+    padding: 128px 0;
+    background-image: url("assets/img/hero-10.jpg");
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+    min-height: 600px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.get-in-touch-area::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: -moz-linear-gradient(45deg, white 0%, #333 0%, #8c0c0c 0%, black 100%);
+    background-image: -webkit-linear-gradient(45deg, white 0%, #333 0%, #8c0c0c 0%, black 100%);
+    background-image: -ms-linear-gradient(45deg, white 0%, #333 0%, #8c0c0c 0%, black 100%);
+    opacity: .80;
+}
+
+.get-in-touch-area__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.get-in-touch-area h2, .get-in-touch-area p {
+    color: white;
+    position: relative;
+    z-index: 30;
+}
+
+.get-in-touch-area h2 {
+    margin-top: 0;
+}
+
+.get-in-touch-area a {
+    align-self: flex-start;
 }
 
 footer {
