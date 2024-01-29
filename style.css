@@ -355,13 +355,13 @@ p {
   flex: 1;
   background: white;
   border: 1px solid #f1f1f1;
-  padding: 16px;
-  min-height: 300px;
+  padding: 32px 16px;
   -webkit-transition: all 0.75s ease;
   -moz-transition: all 0.75s ease;
   -ms-transition: all 0.75s ease;
   -o-transition: all 0.75s ease;
   transition: all 0.75s ease;
+  text-decoration: none;
 }
 
 .features-column:nth-child(1),
@@ -373,12 +373,15 @@ p {
 .features-column:hover h2,
 .features-column:hover p,
 .features-column:nth-child(1) h2,
-.features-column:nth-child(1) p {
+.features-column:nth-child(1) p,
+.features-column:nth-child(1) {
   color: white;
 }
 
 .features-column h2 {
   font-size: 24px;
+  color: black;
+  margin-top: 16px;
 }
 
 @media screen and (min-width: 768px) {
