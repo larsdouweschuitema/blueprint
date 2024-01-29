@@ -323,27 +323,22 @@ section {
   margin-bottom: 56px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0 0 16px 0;
+section h2 {
+    margin-top: 128px;
 }
 
-h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-weight: 500;
+  margin: 0 0 16px 0;
 }
 
 p {
   font-weight: 400;
+  margin: 0 0 16px 0;
 }
 
 .intro .container {
@@ -456,6 +451,28 @@ a.button::before {
 a.btn-style-a::after {
   opacity: 0;
   border: 1px;
+}
+
+.featured-services {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.featured-services__row {
+  display: flex;
+  /* flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; */
+  gap: 16px;
+}
+
+.featured-services__image {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 .features-area {
