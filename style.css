@@ -453,6 +453,11 @@ a.button:hover {
   border: 1px #e40613 solid;
 }
 
+a.button-b:hover {
+    color: white !important;
+    border: 1px white solid;
+}
+
 a.button:hover::before {
   opacity: 0;
   transform: scale(0.5, 0.5);
