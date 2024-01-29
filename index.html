@@ -9,7 +9,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
 
   <body>
@@ -49,7 +55,6 @@
         <div id="slide-2" class="slide"></div>
         <div id="slide-3" class="slide"></div>
         <div id="slide-4" class="slide"></div>
-        <div id="slide-5" class="slide"></div>
       </div>
 
       <div class="slider-controls">
@@ -57,7 +62,6 @@
         <a href="#slide-2"></a>
         <a href="#slide-3"></a>
         <a href="#slide-4"></a>
-        <a href="#slide-5"></a>
       </div>
     </div>
     <main>
@@ -98,16 +102,25 @@
         </div>
       </section>
 
-      <section>
+      <section class="intro">
         <div class="container">
-          <h1>Kickboksen in Almere Buiten bij Fightmasters</h1>
-          <p>
-            Welkom bij Fightmasters, dé sportschool voor kickboksen en boksen in
-            Almere Buiten. Bij ons ben je aan het juiste adres voor kickboks
-            lessen, boksschool trainingen en personal trainingen. Wij zijn trots
-            op ons ervaren team van personal trainers en kickboksers, die jou
-            helpen bij het behalen van je persoonlijke doelen.
-          </p>
+          <div class="intro-content">
+            <h1>Kickboksen in Almere Buiten bij Fightmasters</h1>
+            <p>
+              Welkom bij Fightmasters, dé sportschool voor kickboksen en boksen
+              in Almere Buiten. Bij ons ben je aan het juiste adres voor
+              kickboks lessen, boksschool trainingen en personal trainingen.
+            </p>
+            <p>
+              Wij zijn trots op ons ervaren team van personal trainers en
+              kickboksers, die jou helpen bij het behalen van je persoonlijke
+              doelen.
+            </p>
+            <a href="#" class="button">Neem contact op</a>
+          </div>
+          <div class="intro-image-container">
+            <img src="assets/img/hero.webp" alt="" />
+          </div>
         </div>
       </section>
 
@@ -200,7 +213,14 @@
       <div class="footer-widget-area container">
         <div class="footer-column">
           <h4>Openingstijden</h4>
-          <p>Wij zijn telefonisch bereikbaar op maandag t/m vrijdag <time datetime="18:00">18.00</time>-<time datetime="21:00">21.00</time> uur. Of mail naar: <a href="mailto:info@fightmasters.nl">info@fightmasters.nl</a>.</p>
+          <p>
+            Wij zijn telefonisch bereikbaar op maandag t/m vrijdag
+            <time datetime="18:00">18.00</time>-<time datetime="21:00"
+              >21.00</time
+            >
+            uur. Of mail naar:
+            <a href="mailto:info@fightmasters.nl">info@fightmasters.nl</a>.
+          </p>
           <div class="opening-hours">
             <div class="day-container">
               <div class="day">Maandag</div>
@@ -246,16 +266,16 @@
 
         <nav class="footer-column footer-menu">
           <h4>Menu</h4>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Lessen</a></li>
-              <li><a href="#">Tarieven</a></li>
-              <li><a href="#">Lesrooster</a></li>
-              <li><a href="#">Ons team</a></li>
-              <li><a href="#">Inschrijven</a></li>
-              <li><a href="#">Nieuws</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lessen</a></li>
+            <li><a href="#">Tarieven</a></li>
+            <li><a href="#">Lesrooster</a></li>
+            <li><a href="#">Ons team</a></li>
+            <li><a href="#">Inschrijven</a></li>
+            <li><a href="#">Nieuws</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
 
         <div class="footer-column">
@@ -263,13 +283,25 @@
           <a href="mailto:your@email.com" class="social-icon" title="Email">
             <i class="fas fa-envelope"></i>
           </a>
-          <a href="https://www.facebook.com/yourpage" class="social-icon" title="Facebook">
+          <a
+            href="https://www.facebook.com/yourpage"
+            class="social-icon"
+            title="Facebook"
+          >
             <i class="fab fa-facebook"></i>
           </a>
-          <a href="https://www.instagram.com/youraccount" class="social-icon" title="Instagram">
+          <a
+            href="https://www.instagram.com/youraccount"
+            class="social-icon"
+            title="Instagram"
+          >
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://www.youtube.com/yourchannel" class="social-icon" title="YouTube">
+          <a
+            href="https://www.youtube.com/yourchannel"
+            class="social-icon"
+            title="YouTube"
+          >
             <i class="fab fa-youtube"></i>
           </a>
         </div>
@@ -278,18 +310,19 @@
           <h4>Contact</h4>
           <h5>Fightmasters</h5>
           <address>
-            Markerkant 1525K<br>
+            Markerkant 1525K<br />
             1314 AV ALMERE
           </address>
-      
+
           <p>
-            E. <a href="mailto:info@fightmasters.nl">info@fightmasters.nl</a><br>
-            T. 036 525 13 97<br>
+            E. <a href="mailto:info@fightmasters.nl">info@fightmasters.nl</a
+            ><br />
+            T. 036 525 13 97<br />
             (ma t/m vrij 18.00-21.00 uur)
           </p>
-      
+
           <p>
-            IBAN: NL59INGB0004475217<br>
+            IBAN: NL59INGB0004475217<br />
             KvK: 64934578
           </p>
         </div>

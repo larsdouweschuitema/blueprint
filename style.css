@@ -252,6 +252,18 @@ nav a {
   background-image: url("assets/img/hero.webp");
 }
 
+#slide-2 {
+  background-image: url("assets/img/hero.webp");
+}
+
+#slide-3 {
+  background-image: url("assets/img/hero.webp");
+}
+
+#slide-4 {
+  background-image: url("assets/img/hero.webp");
+}
+
 .slider-controls {
   position: absolute;
   bottom: 100px;
@@ -334,6 +346,88 @@ p {
   font-weight: 400;
 }
 
+.intro .container {
+  flex-direction: column;
+  display: flex;
+}
+
+.intro-content {
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .intro .container {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .intro-content {
+    flex: 0 0 calc(40% - 16px);
+    margin-bottom: 0;
+  }
+
+  .intro-image-container {
+    flex: 0 0 calc(60% - 16px);
+  }
+}
+
+.intro img {
+  height: auto;
+  width: 100%;
+  border: 16px #e40613 solid;
+  box-sizing: border-box;
+}
+
+a.button {
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: white;
+  display: inline-block;
+  padding: 10px 25px;
+  z-index: 1;
+  text-decoration: none;
+  transition: color 0.5s ease, border 0.5s ease;
+}
+
+a.button:hover {
+  color: #e40613 !important;
+  border: 1px #e40613 solid;
+}
+
+a.button:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+a.button:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+a.button::before,
+a.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+a.button::before {
+  background-color: #e40613;
+}
+
+a.btn-style-a::after {
+  opacity: 0;
+  border: 1px;
+}
+
 .features-area {
   display: flex;
   flex-wrap: wrap;
@@ -356,6 +450,22 @@ p {
   -o-transition: all 0.75s ease;
   transition: all 0.75s ease;
   text-decoration: none;
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.99s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 .features-column:nth-child(1),
@@ -383,6 +493,10 @@ p {
   .features-area {
     flex-direction: row;
   }
+}
+
+main section:nth-child(2) {
+  margin-top: -101px;
 }
 
 footer {
