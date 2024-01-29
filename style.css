@@ -340,10 +340,14 @@ p {
 .intro .container {
   flex-direction: column;
   display: flex;
+  align-items: center;
+}
+
+.intro .container h1 {
+    margin-top: 0;
 }
 
 .intro-content {
-  margin-bottom: 16px;
   opacity: 0;
   animation: fadeInLeft 1s ease forwards;
   animation-delay: 0.35s;
