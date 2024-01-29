@@ -27,36 +27,38 @@ body {
 /* CONTAINER START */
 
 .container {
-  width: 100%;
+  width: calc(100% - 32px);
   margin: 0 auto;
   padding: 0 16px;
 }
 
-/* Medium screens (641px to 768px) */
-@media (min-width: 641px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 641px;
+    max-width: 640px;
   }
 }
 
-/* Large screens (769px to 1024px) */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .container {
-    max-width: 769px;
+    max-width: 768px;
   }
 }
 
-/* Extra-large screens (1025px to 1280px) */
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
   .container {
-    max-width: 1025px;
+    max-width: 1024px;
   }
 }
 
-/* 2 Extra-large screens (1281px and above) */
-@media (min-width: 1281px) {
+@media (min-width: 1280) {
+    .container {
+      max-width: 1280;
+    }
+  }
+
+@media (min-width: 1536px) {
   .container {
-    max-width: 1281px;
+    max-width: 1536px;
   }
 }
 
