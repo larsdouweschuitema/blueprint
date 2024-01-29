@@ -830,11 +830,12 @@ footer h5 {
 }
 
 .footer-widget-area {
-  padding: 56px 8px;
+  padding: 56px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
+  gap: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -862,9 +863,29 @@ footer h5 {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .footer-column {
     margin-bottom: 0;
+  }
+
+  .footer-column:nth-child(1) {
+    flex: 0 0 30%;
+    max-width: 30%;
+  }
+
+  .footer-column:nth-child(2) {
+    flex: 0 0 10%;
+    max-width: 10%;
+  }
+
+  .footer-column:nth-child(3) {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .footer-column:nth-child(4) {
+    flex: 0 0 29%;
+    max-width: 29%;
   }
 }
 
