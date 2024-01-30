@@ -984,6 +984,17 @@ a.button::after {
 .news-area__image {
   overflow: hidden;
   display: flex;
+  position: relative;
+}
+
+.news-area__date {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background-color: #e40613;
+  color: #fff;
+  padding: 8px;
+  z-index: 10;
 }
 
 .news-area__image img {
