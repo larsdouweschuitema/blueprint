@@ -1,0 +1,22 @@
+{
+    "name": "Kickboksen Almere",
+    "short_name": "FightMasters",
+    "description": "Gym voor Jeugd & Volwassenen in Almere",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#e40613",
+    "icons": [
+      {
+        "src": "assets/favicon/favicon-32x32.jpg",
+        "sizes": "32x32",
+        "type": "image/jpeg"
+      },
+      {
+        "src": "assets/favicon/favicon-192x192.jpg",
+        "sizes": "192x192",
+        "type": "image/jpeg"
+      }
+    ]
+  }
+  
