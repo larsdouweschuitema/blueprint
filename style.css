@@ -1165,9 +1165,8 @@ footer h5 {
   gap: 10px;
 }
 
-.day-container,
-.time-container {
-  flex: 1;
+.day, .time {
+  margin-bottom: 4px;
 }
 
 address {
