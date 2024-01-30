@@ -904,9 +904,14 @@ address {
   font-style: normal;
 }
 
+.social-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .social-icon {
   font-size: 32px;
-  margin: 0 4px;
   text-decoration: none;
 }
 
