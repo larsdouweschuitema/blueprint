@@ -971,6 +971,12 @@ a.button::after {
   color: #333;
 }
 
+.fighters-area__button {
+  display: inline-flex;
+  align-self: center;
+  margin-top: 16px;
+}
+
 /* Fighters Area END */
 
 /* News Area START */
