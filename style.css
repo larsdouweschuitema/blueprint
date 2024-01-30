@@ -318,7 +318,7 @@ nav a {
   display: inline-flex;
   width: 1rem;
   height: 1rem;
-  background: white;
+  background: transparent;
   border: 2px white solid;
   color: white;
   text-decoration: none;
@@ -334,7 +334,7 @@ nav a {
 
 .slider-controls a:focus,
 .slider-controls a:hover {
-  background: transparent;
+  background: white;
   border: 2px white solid;
 }
 
