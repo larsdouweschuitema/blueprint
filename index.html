@@ -45,13 +45,652 @@
   </head>
 
   <body>
-    <div class="top"></div>
-    <header class="topbar-area">
-      <div class="topbar-area-contact-info container">
-        <div class="topbar-area-contact-info__socials">
+  <!-- Invisible Element Scroll To Top Widget -->
+  <div class="top"></div>
+
+  <!-- Header Section -->
+  <header class="topbar-area">
+    <div class="topbar-area-contact-info container">
+      <div class="topbar-area-contact-info__socials">
+        <a href="https://www.instagram.com/fightmasters/" class="social-icon" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/Fightmasters-185509661818173/" class="social-icon" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCI1VJqgi81pnRUKaG9MBDjA" class="social-icon" target="_blank">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="mailto:info@fightmasters.nl" class="social-icon">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      <div class="topbar-area-contact-info__details">
+        <a href="tel:0365251397">
+          <i class="fas fa-phone"></i><span>036 525 13 97</span>
+        </a>
+      </div>
+    </div>
+    <div class="container topbar-area-container">
+      <a href="#" class="topbar-area-logo">
+        <img src="assets/img/logo-fightmasters.svg" alt="Fightmasters Logo" width="300" height="92" />
+      </a>
+      <div class="hamburger-container">
+        <input type="checkbox" class="hamburger-checkbox" id="hamburger-toggle" aria-label="Toggle menu" />
+        <label for="hamburger-toggle" class="hamburger">
+          <div class="slice"></div>
+          <div class="slice"></div>
+          <div class="slice"></div>
+        </label>
+        <nav class="drawer">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Lessen</a></li>
+            <li><a href="#">Tarieven</a></li>
+            <li><a href="#">Lesrooster</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Inschrijven</a></li>
+            <li><a href="#">Nieuws</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Slider Section -->
+  <div class="slider">
+    <div class="slides">
+      <!-- Individual Slides -->
+      <div id="slide-1" class="slide"></div>
+      <div id="slide-2" class="slide"></div>
+      <div id="slide-3" class="slide"></div>
+      <div id="slide-4" class="slide"></div>
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="slider-controls">
+      <a href="#slide-1" class="control-link active" onclick="changeSlide(1)"></a>
+      <a href="#slide-2" class="control-link" onclick="changeSlide(2)"></a>
+      <a href="#slide-3" class="control-link" onclick="changeSlide(3)"></a>
+      <a href="#slide-4" class="control-link" onclick="changeSlide(4)"></a>
+    </div>
+  </div>
+
+  <!-- Main Content Section -->
+  <main>
+
+    <!-- Signup Section -->
+    <section>
+      <div class="features-area container">
+        <a href="#" class="features-column">
+          <i class="fa-solid fa-fire-alt"></i>
+          <h2>GRATIS proefles</h2>
+          <p>
+            Benieuwd naar een training bij Fightmasters? <span Meld class="text-underline">Meld je dan hier aan</span>
+            en kom gezellig langs!
+          </p>
+        </a>
+
+        <a href="#" class="features-column">
+          <i class="fa-solid fa-heartbeat"></i>
+          <h2>Schrijf je NU in!</h2>
+          <p>
+            Klaar om van start te gaan? <span Schrijf class="text-underline">Schrijf je online in</span> en begin meteen
+            met trainen!
+          </p>
+        </a>
+
+        <a href="#" class="features-column">
+          <i class="fa-solid fa-person-military-to-person"></i>
+          <h2>Personal Training</h2>
+          <p>
+            Interesse in 1 op 1 training om je persoonlijke doelen te behalen?
+            <span class="text-underline">Vul hier je gegevens in</span> en wij bellen je.
+          </p>
+        </a>
+
+        <a href="#" class="features-column">
+          <i class="fa-solid fa-paper-plane"></i>
+          <h2>Vragen?</h2>
+          <p>Fightmasters beantwoordt uw vragen binnen 24 uur.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro">
+      <div class="container">
+        <div class="intro-content">
+          <h1>Kickboksen in Almere Buiten bij Fightmasters</h1>
+          <p>
+            Welkom bij Fightmasters, dé sportschool voor kickboksen en boksen
+            in Almere Buiten. Bij ons ben je aan het juiste adres voor
+            kickboks lessen, boksschool trainingen en personal trainingen.
+          </p>
+          <p>
+            Wij zijn trots op ons ervaren team van personal trainers en
+            kickboksers, die jou helpen bij het behalen van je persoonlijke
+            doelen.
+          </p>
+          <a href="#" class="button" aria-label="Neem contact op"
+            >Neem contact op</a
+          >
+        </div>
+        <div class="intro-image-container">
+          <img
+            src="assets/img/hero.webp"
+            alt="Een groep jonge mannen die kickboksen traint gezamenlijk kickboxing in een sportschool, waarbij ze hun kracht en vastberadenheid tonen."
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+      <div class="featured-services container">
+        <div class="featured-services__row">
+          <h2>Kickboks training volgen bij Fightmasters</h2>
+          <p>
+            Kickboksen bij Fightmasters betekent op professionele wijze aan de
+            slag gaan met de sport. Alle trainingen die wij aanbieden zijn
+            voor zowel beginners als gevorderden. Of je nooit een kickboks les
+            hebt gehad, of al jaren fanatiek bezig bent: we gaan samen aan de
+            slag om je naar een hoger niveau te brengen. Je kunt ook kiezen om
+            aan de slag te gaan met Fitboksen. In de lessen Fitboksen en Fight
+            Fitness zijn we op een andere manier met kickboksen bezig. Deze
+            lessen zijn gericht op conditie en kracht. Door de
+            intervaltrainingen wordt een hoge vetverbranding bereikt. Daag
+            jezelf uit en ga voor een betere conditie en meer kracht!
+          </p>
+        </div>
+
+        <div class="featured-services__row">
+          <div class="featured-services__text-container">
+            <img
+              src="assets/img/featured-services/hero-7.webp"
+              alt="Twee dames trainen samen techniek tijdens een kickboksles. Één leerling trapt een lowkick en de andere verdedigt de lowkick met een block."
+              class="featured-services__image"
+              loading="lazy"
+            />
+            <div class="featured-services__text">
+              <h3>Personal training</h3>
+              <p>
+                De gym biedt trainingen voor zowel beginnende als gevorderde
+                kickboksers.
+              </p>
+              <a href="#" class="button button-c">Lees meer</a>
+            </div>
+          </div>
+
+          <div class="featured-services__text-container">
+            <img
+              src="assets/img/featured-services/hero-6.webp"
+              alt="Twee jongens trainen samen in een kickboksschool. Één leerling gooit met vastberadenheid een rechtse directe op de hand van de andere leerling."
+              class="featured-services__image"
+              loading="lazy"
+            />
+            <div class="featured-services__text">
+              <h3>Personal training</h3>
+              <p>
+                De gym biedt trainingen voor zowel beginnende als gevorderde
+                kickboksers.
+              </p>
+              <a href="#" class="button button-c">Lees meer</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="featured-services__row">
+          <div class="featured-services__text-container">
+            <img
+              src="assets/img/featured-services/hero-5.webp"
+              alt="Image 1"
+              class="featured-services__image"
+              loading="lazy"
+            />
+            <div class="featured-services__text">
+              <h3>Personal training</h3>
+              <p>
+                De gym biedt trainingen voor zowel beginnende als gevorderde
+                kickboksers.
+              </p>
+              <a href="#" class="button button-c">Lees meer</a>
+            </div>
+          </div>
+
+          <div class="featured-services__text-container">
+            <img
+              src="assets/img/featured-services/hero-4.webp"
+              alt="Image 1"
+              class="featured-services__image"
+              loading="lazy"
+            />
+            <div class="featured-services__text">
+              <h3>Personal training</h3>
+              <p>
+                De gym biedt trainingen voor zowel beginnende als gevorderde
+                kickboksers.
+              </p>
+              <a href="#" class="button button-c">Lees meer</a>
+            </div>
+          </div>
+
+          <div class="featured-services__text-container">
+            <img
+              src="assets/img/featured-services/hero-3.webp"
+              alt="Trainer en leerling tonen een ontwijkingstechniek tijdens een kickboksles"
+              class="featured-services__image"
+              loading="lazy"
+            />
+            <div class="featured-services__text">
+              <h3>Personal training</h3>
+              <p>
+                De gym biedt trainingen voor zowel beginnende als gevorderde
+                kickboksers.
+              </p>
+              <a href="#" class="button button-c">Lees meer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Get In Touch Section -->
+    <section class="get-in-touch-area">
+      <div class="container get-in-touch-area__container">
+        <h2>Meld je aan voor een gratis proefles</h2>
+        <p>
+          Ben jij op zoek naar kickboksen in de buurt van Almere Buiten of een
+          boksschool in Almere? Dan ben je bij ons aan het juiste adres. Onze
+          lessen zijn niet alleen uitdagend, maar ook leuk en motiverend. Ben
+          jij klaar om ervoor te gaan? Meld je nu aan voor een gratis proefles
+          en kom gezellig kickboksen in Almere!
+        </p>
+        <a href="#" class="button button-b" aria-label="Aanmelden proefles"
+          >Aanmelden proefles</a
+        >
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section>
+      <div class="container courses-area">
+        <div>
+          <h2>Kickboksen voor jeugd</h2>
+          <p>
+            Speciaal voor de jeugd en kinderen hebben wij ons gespecialiseerd
+            in kickboksen. Onze jeugdlessen zijn erop gericht om kinderen op
+            een speelse en veilige manier kennis te laten maken met
+            kickboksen. Zo leren zij niet alleen de technieken van kickboksen,
+            maar ontwikkelen zij ook discipline en zelfvertrouwen. Door het
+            combineren van kickboksen met spelelementen komen tijdens deze
+            trainingen op een leuke manier discipline, technieken en conditie
+            aan bod.
+          </p>
+          <p>
+            Er wordt hard getraind en iedereen is meer dan welkom! Door de
+            open en gezellige sfeer, is het ook voor de jeugd aantrekkelijk om
+            kennis te maken met deze sport. Zo is de jeugd op jonge leeftijd
+            al fanatiek bezig met sporten en gezond leven. Naast deze
+            sportiviteit leren zij ook over discipline.
+          </p>
+        </div>
+
+        <div>
+          <h2>Kickboksen in Almere</h2>
+          <p>
+            Ben jij woonachtig in Almere of omgeving en wil jij ook werken aan
+            je kracht en conditie? Kom dan kickboksen bij Fightmasters Almere,
+            en ontmoet andere sporters uit de buurt. Naast dat er hard wordt
+            getraind, is het ook altijd gezellig bij ons. Dit maakt het
+            sporten nog leuker en word je extra gemotiveerd om te blijven
+            sporten. Samen gaan we er tegenaan, en voordat je het weet kun je
+            niet meer zonder het kickboksen bij Fightmasters Almere!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outro Section -->
+    <section class="outro">
+      <div class="container">
+        <div class="outro-image-container">
+          <img
+            src="assets/img/hero-6.webp"
+            alt="Twee leerlingen trainen samen tijdens een kickboksles. Één leerling gooit met vastberadenheid een rechtse directe op de hand van de andere leerling."
+            loading="lazy"
+          />
+        </div>
+        <div class="outro-content">
+          <h2>Kickboks lessen voor beginners en gevorderden</h2>
+          <p>
+            De gym biedt naast trainingen voor gedisciplineerde topvechters
+            ook trainingen aan voor beginnende en gevorderde kickboksers. Je
+            kunt als recreant trainen of je kunt jezelf voorbereiden op de
+            stap naar de wedstrijdgroep. Er is voor elk niveau aanbod en door
+            de vakkundige trainers word je professioneel begeleid, waardoor je
+            jezelf kunt blijven ontwikkelen. Voor zowel beginners als
+            gevorderden werken we aan kracht, conditie, discipline en
+            verschillende technieken. Ook is het mogelijk om personal training
+            te krijgen.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fighters Section -->
+    <section>
+      <div class="container fighters-area">
+        <div class="fighters-area__text">
+          <h2>Onze vechters en trainers</h2>
+          <p>
+            Bij Fightmasters heten we iedereen, van recreant tot ervaren
+            vechter, hartelijk welkom! Ontdek onze diverse klassen voor jeugd,
+            N, C, B, en A, waar sportieve successen en belangrijke waarden
+            zoals discipline samenkomen. Volg ons op sociale media voor een
+            inkijkje in de passie van Fightmasters, waar ervaring,
+            enthousiasme en plezier samenkomen in de ring!
+          </p>
+        </div>
+        <div class="fighters-area-container">
+          <div class="fighter">
+            <img
+              src="assets/img/hero.webp"
+              alt="Person 1"
+              class="fighter__image"
+            />
+            <div class="fighter__info">
+              <p class="fighter__info-full-name">Harold Deekman</p>
+              <p class="fighter__info-title">Trainer</p>
+              <div class="fighter__social-icons">
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fighter">
+            <img
+              src="assets/img/hero-2.webp"
+              alt="Person 1"
+              class="fighter__image"
+            />
+            <div class="fighter__info">
+              <p class="fighter__info-full-name">Treffel Veerkamp</p>
+              <p class="fighter__info-title">Trainer</p>
+              <div class="fighter__social-icons">
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fighter">
+            <img
+              src="assets/img/hero-3.webp"
+              alt="Person 1"
+              class="fighter__image"
+            />
+            <div class="fighter__info">
+              <p class="fighter__info-full-name">Benito Caupain</p>
+              <p class="fighter__info-title">Trainer</p>
+              <div class="fighter__social-icons">
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fighter">
+            <img
+              src="assets/img/hero-4.webp"
+              alt="Person 1"
+              class="fighter__image"
+            />
+            <div class="fighter__info">
+              <p class="fighter__info-full-name">Hamza Hazzar</p>
+              <p class="fighter__info-title">A-klasse</p>
+              <div class="fighter__social-icons">
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fighter">
+            <img
+              src="assets/img/hero-5.webp"
+              alt="Person 1"
+              class="fighter__image"
+            />
+            <div class="fighter__info">
+              <p class="fighter__info-full-name">Rudsel Zhinhage</p>
+              <p class="fighter__info-title">A-klasse</p>
+              <div class="fighter__social-icons">
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fighter">
+            <img
+              src="assets/img/hero-6.webp"
+              alt="Person 1"
+              class="fighter__image"
+            />
+            <div class="fighter__info">
+              <p class="fighter__info-full-name">Kuku Victor</p>
+              <p class="fighter__info-title">MMA Pro</p>
+              <div class="fighter__social-icons">
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fighter">
+            <img
+              src="assets/img/hero-7.webp"
+              alt="Person 1"
+              class="fighter__image"
+            />
+            <div class="fighter__info">
+              <p class="fighter__info-full-name">Yashemine</p>
+              <p class="fighter__info-title">B-klasse</p>
+              <div class="fighter__social-icons">
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="fighter">
+            <img
+              src="assets/img/hero-8.webp"
+              alt="Person 1"
+              class="fighter__image"
+            />
+            <div class="fighter__info">
+              <p class="fighter__info-full-name">Aicha</p>
+              <p class="fighter__info-title">C-klasse</p>
+              <div class="fighter__social-icons">
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a> 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="button fighters-area__button" aria-label="Neem contact op"
+        >Bekijk alle vechters en trainers</a
+      >
+      </div>
+    </section>
+
+    <!-- News Section -->
+    <section>
+      <div class="container news-area">
+        <h2>Laatste nieuws</h2>
+        <div>
+          <p>
+            Ontvang de laatste updates van Fightmasters! Van opwindende
+            trainingssessies tot inspirerende verhalen, blijf op de hoogte van
+            ons nieuws. In een omgeving waar gastvrijheid en sportiviteit
+            samenkomen, delen we met trots onze successen en lessen over
+            discipline.
+          </p>
+        </div>
+        <div class="news-area__container">
+          <div class="news-area__item">
+            <a href="#" class="news-area__image">
+              <time datetime="2023-01-01" class="news-area__date">01 Jan</time>
+            <img
+              src="assets/img/hero-5.webp"
+              alt="Image 1"
+            />
+            </a>
+            <h3 class="news-area__title"><a href="#">Kickboksen als effectieve...</a></h3>
+            <p class="news-area__description">
+              Kickboksen versterkt lichaam en geest, bevordert discipline en stressverlichting.
+            </p>
+          </div>
+
+          <!-- News Item 2 -->
+          <div class="news-area__item">
+            <a href="#" class="news-area__image">
+              <time datetime="2023-01-01" class="news-area__date">01 Jan</time>
+              <img
+                src="assets/img/hero-7.webp"
+                alt="Image 1"
+              />
+            <h3 class="news-area__title"><a href="#">De voordelen van...</a></h3>
+            <p class="news-area__description">
+              Kickboksen versterkt lichaam en geest, bevordert discipline en stressverlichting.
+            </p>
+          </div>
+
+          <!-- News Item 3 -->
+          <div class="news-area__item">
+            <a href="#" class="news-area__image">
+              <time datetime="2023-01-01" class="news-area__date">01 Jan</time>
+              <img
+                src="assets/img/hero-6.webp"
+                alt="Image 1"
+              />
+            <h3 class="news-area__title"><a href="#">Afvallen met kickboksen...</a></h3>
+            <p class="news-area__description">
+              Kickboksen versterkt lichaam en geest, bevordert discipline en stressverlichting.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <!-- Footer Widget Area -->
+    <div class="footer-widget-area container">
+      <!-- Footer Widget Opening Hours -->
+      <div class="footer-column">
+        <h4>Openingstijden</h4>
+        <p>
+          Wij zijn telefonisch bereikbaar op maandag t/m vrijdag
+          <time datetime="18:00">18.00</time>-<time datetime="21:00"
+            >21.00</time
+          >
+          uur. Of mail naar:
+          <a href="mailto:info@fightmasters.nl">info@fightmasters.nl</a>.
+        </p>
+        <div class="opening-hours">
+          <div class="day-container">
+            <div class="day">Maandag</div>
+            <div class="day">Dinsdag</div>
+            <div class="day">Woensdag</div>
+            <div class="day">Donderdag</div>
+            <div class="day">Vrijdag</div>
+            <div class="day">Zaterdag</div>
+            <div class="day">Zondag</div>
+          </div>
+          <div class="time-container">
+            <div class="time">
+              <time datetime="16:00">16:00</time> -
+              <time datetime="21:00">21:00</time>
+            </div>
+            <div class="time">
+              <time datetime="17:00">17:00</time> -
+              <time datetime="22:00">22:00</time>
+            </div>
+            <div class="time">
+              <time datetime="09:15">09:15</time> -
+              <time datetime="10:15">10:15</time> en
+              <time datetime="09:15">16:00</time> -
+              <time datetime="10:15">21:00</time>
+            </div>
+            <div class="time">
+              <time datetime="16:00">16:00</time> -
+              <time datetime="21:00">21:00</time>
+            </div>
+            <div class="time">
+              <time datetime="17:00">09:15</time> -
+              <time datetime="21:00">10:15</time> en
+              <time datetime="09:15">17:00</time> -
+              <time datetime="10:15">21:00</time>
+            </div>
+            <div class="time">
+              <time datetime="09:00">09:00</time> -
+              <time datetime="12:15">12:15</time>
+            </div>
+            <div class="time">
+              <time datetime="12:00">12:00</time> -
+              <time datetime="13:00">13:00</time>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Widget Menu -->
+      <nav class="footer-column footer-menu">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Lessen</a></li>
+          <li><a href="#">Tarieven</a></li>
+          <li><a href="#">Lesrooster</a></li>
+          <li><a href="#">Ons team</a></li>
+          <li><a href="#">Inschrijven</a></li>
+          <li><a href="#">Nieuws</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Footer Widget Socials -->
+      <div class="footer-column">
+        <h4>Volg ons</h4>
+        <div class="social-icon-container">
           <a
             href="https://www.instagram.com/fightmasters/"
             class="social-icon"
+            title="Instagram"
             target="_blank"
           >
             <i class="fab fa-instagram"></i>
@@ -59,6 +698,7 @@
           <a
             href="https://www.facebook.com/Fightmasters-185509661818173/"
             class="social-icon"
+            title="Facebook"
             target="_blank"
           >
             <i class="fab fa-facebook"></i>
@@ -66,691 +706,53 @@
           <a
             href="https://www.youtube.com/channel/UCI1VJqgi81pnRUKaG9MBDjA"
             class="social-icon"
+            title="YouTube"
             target="_blank"
           >
             <i class="fab fa-youtube"></i>
           </a>
-          <a href="mailto:info@fightmasters.nl" class="social-icon"
-            ><i class="fas fa-envelope"></i>
-          </a>
         </div>
-        <div class="topbar-area-contact-info__details">
-          <a href="tel:0365251397"
-            ><i class="fas fa-phone"></i><span>036 525 13 97</span>
-          </a>
-        </div>
-      </div>
-      <div class="container topbar-area-container">
-        <a href="#" class="topbar-area-logo"
-          ><img
-            src="assets/img/logo-fightmasters.svg"
-            alt="Rood en zwart logo van Fightmasters met een samengevoegde F en M boven de tekst"
-            width="300" height="92"
-        /></a>
-        <div class="hamburger-container">
-          <input
-            type="checkbox"
-            class="hamburger-checkbox"
-            id="hamburger-toggle"
-            aria-label="Toggle menu"
-          />
-          <label for="hamburger-toggle" class="hamburger">
-            <div class="slice"></div>
-            <div class="slice"></div>
-            <div class="slice"></div>
-          </label>
-          <nav class="drawer">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Lessen</a></li>
-              <li><a href="#">Tarieven</a></li>
-              <li><a href="#">Lesrooster</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Inschrijven</a></li>
-              <li><a href="#">Nieuws</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <div class="slider">
-      <div class="slides">
-        <div id="slide-1" class="slide"></div>
-        <div id="slide-2" class="slide"></div>
-        <div id="slide-3" class="slide"></div>
-        <div id="slide-4" class="slide"></div>
       </div>
 
-      <div class="slider-controls">
-        <a
-          href="#slide-1"
-          class="control-link active"
-          onclick="changeSlide(1)"
-        ></a>
-        <a href="#slide-2" class="control-link" onclick="changeSlide(2)"></a>
-        <a href="#slide-3" class="control-link" onclick="changeSlide(3)"></a>
-        <a href="#slide-4" class="control-link" onclick="changeSlide(4)"></a>
+      <!-- Footer Widget Contact Details -->
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <h5>Fightmasters</h5>
+        <address>
+          Markerkant 1525K<br />
+          1314 AV ALMERE
+        </address>
+
+        <p>
+          <i class="fas fa-envelope"></i>
+          <a href="info@fightmasters.nl">info@fightmasters.nl</a><br />
+          <i class="fas fa-phone"></i>
+          <a href="tel:0365251397">036 525 13 97</a><br />
+          (ma t/m vrij 18.00-21.00 uur)
+        </p>
+
+        <p>
+          IBAN: NL59INGB0004475217<br />
+          KvK: 64934578
+        </p>
       </div>
     </div>
-    <main>
-      <section>
-        <div class="features-area container">
-          <a href="#" class="features-column">
-            <i class="fa-solid fa-fire-alt"></i>
-            <h2>GRATIS proefles</h2>
-            <p>
-              Benieuwd naar een training bij Fightmasters? <span Meld class="text-underline">Meld je dan hier aan</span>
-              en kom gezellig langs!
-            </p>
-          </a>
 
-          <a href="#" class="features-column">
-            <i class="fa-solid fa-heartbeat"></i>
-            <h2>Schrijf je NU in!</h2>
-            <p>
-              Klaar om van start te gaan? <span Schrijf class="text-underline">Schrijf je online in</span> en begin meteen
-              met trainen!
-            </p>
-          </a>
-
-          <a href="#" class="features-column">
-            <i class="fa-solid fa-person-military-to-person"></i>
-            <h2>Personal Training</h2>
-            <p>
-              Interesse in 1 op 1 training om je persoonlijke doelen te behalen?
-              <span class="text-underline">Vul hier je gegevens in</span> en wij bellen je.
-            </p>
-          </a>
-
-          <a href="#" class="features-column">
-            <i class="fa-solid fa-paper-plane"></i>
-            <h2>Vragen?</h2>
-            <p>Fightmasters beantwoordt uw vragen binnen 24 uur.</p>
-          </a>
-        </div>
-      </section>
-
-      <section class="intro">
-        <div class="container">
-          <div class="intro-content">
-            <h1>Kickboksen in Almere Buiten bij Fightmasters</h1>
-            <p>
-              Welkom bij Fightmasters, dé sportschool voor kickboksen en boksen
-              in Almere Buiten. Bij ons ben je aan het juiste adres voor
-              kickboks lessen, boksschool trainingen en personal trainingen.
-            </p>
-            <p>
-              Wij zijn trots op ons ervaren team van personal trainers en
-              kickboksers, die jou helpen bij het behalen van je persoonlijke
-              doelen.
-            </p>
-            <a href="#" class="button" aria-label="Neem contact op"
-              >Neem contact op</a
-            >
-          </div>
-          <div class="intro-image-container">
-            <img
-              src="assets/img/hero.webp"
-              alt="Een groep jonge mannen die kickboksen traint gezamenlijk kickboxing in een sportschool, waarbij ze hun kracht en vastberadenheid tonen."
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="featured-services container">
-          <div class="featured-services__row">
-            <h2>Kickboks training volgen bij Fightmasters</h2>
-            <p>
-              Kickboksen bij Fightmasters betekent op professionele wijze aan de
-              slag gaan met de sport. Alle trainingen die wij aanbieden zijn
-              voor zowel beginners als gevorderden. Of je nooit een kickboks les
-              hebt gehad, of al jaren fanatiek bezig bent: we gaan samen aan de
-              slag om je naar een hoger niveau te brengen. Je kunt ook kiezen om
-              aan de slag te gaan met Fitboksen. In de lessen Fitboksen en Fight
-              Fitness zijn we op een andere manier met kickboksen bezig. Deze
-              lessen zijn gericht op conditie en kracht. Door de
-              intervaltrainingen wordt een hoge vetverbranding bereikt. Daag
-              jezelf uit en ga voor een betere conditie en meer kracht!
-            </p>
-          </div>
-
-          <div class="featured-services__row">
-            <div class="featured-services__text-container">
-              <img
-                src="assets/img/featured-services/hero-7.webp"
-                alt="Twee dames trainen samen techniek tijdens een kickboksles. Één leerling trapt een lowkick en de andere verdedigt de lowkick met een block."
-                class="featured-services__image"
-                loading="lazy"
-              />
-              <div class="featured-services__text">
-                <h3>Personal training</h3>
-                <p>
-                  De gym biedt trainingen voor zowel beginnende als gevorderde
-                  kickboksers.
-                </p>
-                <a href="#" class="button button-c">Lees meer</a>
-              </div>
-            </div>
-
-            <div class="featured-services__text-container">
-              <img
-                src="assets/img/featured-services/hero-6.webp"
-                alt="Twee jongens trainen samen in een kickboksschool. Één leerling gooit met vastberadenheid een rechtse directe op de hand van de andere leerling."
-                class="featured-services__image"
-                loading="lazy"
-              />
-              <div class="featured-services__text">
-                <h3>Personal training</h3>
-                <p>
-                  De gym biedt trainingen voor zowel beginnende als gevorderde
-                  kickboksers.
-                </p>
-                <a href="#" class="button button-c">Lees meer</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="featured-services__row">
-            <div class="featured-services__text-container">
-              <img
-                src="assets/img/featured-services/hero-5.webp"
-                alt="Image 1"
-                class="featured-services__image"
-                loading="lazy"
-              />
-              <div class="featured-services__text">
-                <h3>Personal training</h3>
-                <p>
-                  De gym biedt trainingen voor zowel beginnende als gevorderde
-                  kickboksers.
-                </p>
-                <a href="#" class="button button-c">Lees meer</a>
-              </div>
-            </div>
-
-            <div class="featured-services__text-container">
-              <img
-                src="assets/img/featured-services/hero-4.webp"
-                alt="Image 1"
-                class="featured-services__image"
-                loading="lazy"
-              />
-              <div class="featured-services__text">
-                <h3>Personal training</h3>
-                <p>
-                  De gym biedt trainingen voor zowel beginnende als gevorderde
-                  kickboksers.
-                </p>
-                <a href="#" class="button button-c">Lees meer</a>
-              </div>
-            </div>
-
-            <div class="featured-services__text-container">
-              <img
-                src="assets/img/featured-services/hero-3.webp"
-                alt="Trainer en leerling tonen een ontwijkingstechniek tijdens een kickboksles"
-                class="featured-services__image"
-                loading="lazy"
-              />
-              <div class="featured-services__text">
-                <h3>Personal training</h3>
-                <p>
-                  De gym biedt trainingen voor zowel beginnende als gevorderde
-                  kickboksers.
-                </p>
-                <a href="#" class="button button-c">Lees meer</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="get-in-touch-area">
-        <div class="container get-in-touch-area__container">
-          <h2>Meld je aan voor een gratis proefles</h2>
-          <p>
-            Ben jij op zoek naar kickboksen in de buurt van Almere Buiten of een
-            boksschool in Almere? Dan ben je bij ons aan het juiste adres. Onze
-            lessen zijn niet alleen uitdagend, maar ook leuk en motiverend. Ben
-            jij klaar om ervoor te gaan? Meld je nu aan voor een gratis proefles
-            en kom gezellig kickboksen in Almere!
-          </p>
-          <a href="#" class="button button-b" aria-label="Aanmelden proefles"
-            >Aanmelden proefles</a
-          >
-        </div>
-      </section>
-
-      <section>
-        <div class="container courses-area">
-          <div>
-            <h2>Kickboksen voor jeugd</h2>
-            <p>
-              Speciaal voor de jeugd en kinderen hebben wij ons gespecialiseerd
-              in kickboksen. Onze jeugdlessen zijn erop gericht om kinderen op
-              een speelse en veilige manier kennis te laten maken met
-              kickboksen. Zo leren zij niet alleen de technieken van kickboksen,
-              maar ontwikkelen zij ook discipline en zelfvertrouwen. Door het
-              combineren van kickboksen met spelelementen komen tijdens deze
-              trainingen op een leuke manier discipline, technieken en conditie
-              aan bod.
-            </p>
-            <p>
-              Er wordt hard getraind en iedereen is meer dan welkom! Door de
-              open en gezellige sfeer, is het ook voor de jeugd aantrekkelijk om
-              kennis te maken met deze sport. Zo is de jeugd op jonge leeftijd
-              al fanatiek bezig met sporten en gezond leven. Naast deze
-              sportiviteit leren zij ook over discipline.
-            </p>
-          </div>
-
-          <div>
-            <h2>Kickboksen in Almere</h2>
-            <p>
-              Ben jij woonachtig in Almere of omgeving en wil jij ook werken aan
-              je kracht en conditie? Kom dan kickboksen bij Fightmasters Almere,
-              en ontmoet andere sporters uit de buurt. Naast dat er hard wordt
-              getraind, is het ook altijd gezellig bij ons. Dit maakt het
-              sporten nog leuker en word je extra gemotiveerd om te blijven
-              sporten. Samen gaan we er tegenaan, en voordat je het weet kun je
-              niet meer zonder het kickboksen bij Fightmasters Almere!
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="outro">
-        <div class="container">
-          <div class="outro-image-container">
-            <img
-              src="assets/img/hero-6.webp"
-              alt="Twee leerlingen trainen samen tijdens een kickboksles. Één leerling gooit met vastberadenheid een rechtse directe op de hand van de andere leerling."
-              loading="lazy"
-            />
-          </div>
-          <div class="outro-content">
-            <h2>Kickboks lessen voor beginners en gevorderden</h2>
-            <p>
-              De gym biedt naast trainingen voor gedisciplineerde topvechters
-              ook trainingen aan voor beginnende en gevorderde kickboksers. Je
-              kunt als recreant trainen of je kunt jezelf voorbereiden op de
-              stap naar de wedstrijdgroep. Er is voor elk niveau aanbod en door
-              de vakkundige trainers word je professioneel begeleid, waardoor je
-              jezelf kunt blijven ontwikkelen. Voor zowel beginners als
-              gevorderden werken we aan kracht, conditie, discipline en
-              verschillende technieken. Ook is het mogelijk om personal training
-              te krijgen.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="container fighters-area">
-          <div class="fighters-area__text">
-            <h2>Onze vechters en trainers</h2>
-            <p>
-              Bij Fightmasters heten we iedereen, van recreant tot ervaren
-              vechter, hartelijk welkom! Ontdek onze diverse klassen voor jeugd,
-              N, C, B, en A, waar sportieve successen en belangrijke waarden
-              zoals discipline samenkomen. Volg ons op sociale media voor een
-              inkijkje in de passie van Fightmasters, waar ervaring,
-              enthousiasme en plezier samenkomen in de ring!
-            </p>
-          </div>
-          <div class="fighters-area-container">
-            <div class="fighter">
-              <img
-                src="assets/img/hero.webp"
-                alt="Person 1"
-                class="fighter__image"
-              />
-              <div class="fighter__info">
-                <p class="fighter__info-full-name">Harold Deekman</p>
-                <p class="fighter__info-title">Trainer</p>
-                <div class="fighter__social-icons">
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="fighter">
-              <img
-                src="assets/img/hero-2.webp"
-                alt="Person 1"
-                class="fighter__image"
-              />
-              <div class="fighter__info">
-                <p class="fighter__info-full-name">Treffel Veerkamp</p>
-                <p class="fighter__info-title">Trainer</p>
-                <div class="fighter__social-icons">
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="fighter">
-              <img
-                src="assets/img/hero-3.webp"
-                alt="Person 1"
-                class="fighter__image"
-              />
-              <div class="fighter__info">
-                <p class="fighter__info-full-name">Benito Caupain</p>
-                <p class="fighter__info-title">Trainer</p>
-                <div class="fighter__social-icons">
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="fighter">
-              <img
-                src="assets/img/hero-4.webp"
-                alt="Person 1"
-                class="fighter__image"
-              />
-              <div class="fighter__info">
-                <p class="fighter__info-full-name">Hamza Hazzar</p>
-                <p class="fighter__info-title">A-klasse</p>
-                <div class="fighter__social-icons">
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="fighter">
-              <img
-                src="assets/img/hero-5.webp"
-                alt="Person 1"
-                class="fighter__image"
-              />
-              <div class="fighter__info">
-                <p class="fighter__info-full-name">Rudsel Zhinhage</p>
-                <p class="fighter__info-title">A-klasse</p>
-                <div class="fighter__social-icons">
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="fighter">
-              <img
-                src="assets/img/hero-6.webp"
-                alt="Person 1"
-                class="fighter__image"
-              />
-              <div class="fighter__info">
-                <p class="fighter__info-full-name">Kuku Victor</p>
-                <p class="fighter__info-title">MMA Pro</p>
-                <div class="fighter__social-icons">
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="fighter">
-              <img
-                src="assets/img/hero-7.webp"
-                alt="Person 1"
-                class="fighter__image"
-              />
-              <div class="fighter__info">
-                <p class="fighter__info-full-name">Yashemine</p>
-                <p class="fighter__info-title">B-klasse</p>
-                <div class="fighter__social-icons">
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="fighter">
-              <img
-                src="assets/img/hero-8.webp"
-                alt="Person 1"
-                class="fighter__image"
-              />
-              <div class="fighter__info">
-                <p class="fighter__info-full-name">Aicha</p>
-                <p class="fighter__info-title">C-klasse</p>
-                <div class="fighter__social-icons">
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-instagram"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-facebook"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="#" target="_blank" class="fighter__info-social-icon"><i class="fab fa-linkedin"></i></a> 
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a href="#" class="button fighters-area__button" aria-label="Neem contact op"
-          >Bekijk alle vechters en trainers</a
-        >
-        </div>
-      </section>
-
-      <section>
-        <div class="container news-area">
-          <h2>Laatste nieuws</h2>
-          <div>
-            <p>
-              Ontvang de laatste updates van Fightmasters! Van opwindende
-              trainingssessies tot inspirerende verhalen, blijf op de hoogte van
-              ons nieuws. In een omgeving waar gastvrijheid en sportiviteit
-              samenkomen, delen we met trots onze successen en lessen over
-              discipline.
-            </p>
-          </div>
-          <div class="news-area__container">
-            <div class="news-area__item">
-              <a href="#" class="news-area__image">
-                <time datetime="2023-01-01" class="news-area__date">01 Jan</time>
-              <img
-                src="assets/img/hero-5.webp"
-                alt="Image 1"
-              />
-              </a>
-              <h3 class="news-area__title"><a href="#">Kickboksen als effectieve...</a></h3>
-              <p class="news-area__description">
-                Kickboksen versterkt lichaam en geest, bevordert discipline en stressverlichting.
-              </p>
-            </div>
-
-            <!-- News Item 2 -->
-            <div class="news-area__item">
-              <a href="#" class="news-area__image">
-                <time datetime="2023-01-01" class="news-area__date">01 Jan</time>
-                <img
-                  src="assets/img/hero-7.webp"
-                  alt="Image 1"
-                />
-              <h3 class="news-area__title"><a href="#">De voordelen van...</a></h3>
-              <p class="news-area__description">
-                Kickboksen versterkt lichaam en geest, bevordert discipline en stressverlichting.
-              </p>
-            </div>
-
-            <!-- News Item 3 -->
-            <div class="news-area__item">
-              <a href="#" class="news-area__image">
-                <time datetime="2023-01-01" class="news-area__date">01 Jan</time>
-                <img
-                  src="assets/img/hero-6.webp"
-                  alt="Image 1"
-                />
-              <h3 class="news-area__title"><a href="#">Afvallen met kickboksen...</a></h3>
-              <p class="news-area__description">
-                Kickboksen versterkt lichaam en geest, bevordert discipline en stressverlichting.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-widget-area container">
-        <div class="footer-column">
-          <h4>Openingstijden</h4>
-          <p>
-            Wij zijn telefonisch bereikbaar op maandag t/m vrijdag
-            <time datetime="18:00">18.00</time>-<time datetime="21:00"
-              >21.00</time
-            >
-            uur. Of mail naar:
-            <a href="mailto:info@fightmasters.nl">info@fightmasters.nl</a>.
-          </p>
-          <div class="opening-hours">
-            <div class="day-container">
-              <div class="day">Maandag</div>
-              <div class="day">Dinsdag</div>
-              <div class="day">Woensdag</div>
-              <div class="day">Donderdag</div>
-              <div class="day">Vrijdag</div>
-              <div class="day">Zaterdag</div>
-              <div class="day">Zondag</div>
-            </div>
-            <div class="time-container">
-              <div class="time">
-                <time datetime="16:00">16:00</time> -
-                <time datetime="21:00">21:00</time>
-              </div>
-              <div class="time">
-                <time datetime="17:00">17:00</time> -
-                <time datetime="22:00">22:00</time>
-              </div>
-              <div class="time">
-                <time datetime="09:15">09:15</time> -
-                <time datetime="10:15">10:15</time> en
-                <time datetime="09:15">16:00</time> -
-                <time datetime="10:15">21:00</time>
-              </div>
-              <div class="time">
-                <time datetime="16:00">16:00</time> -
-                <time datetime="21:00">21:00</time>
-              </div>
-              <div class="time">
-                <time datetime="17:00">09:15</time> -
-                <time datetime="21:00">10:15</time> en
-                <time datetime="09:15">17:00</time> -
-                <time datetime="10:15">21:00</time>
-              </div>
-              <div class="time">
-                <time datetime="09:00">09:00</time> -
-                <time datetime="12:15">12:15</time>
-              </div>
-              <div class="time">
-                <time datetime="12:00">12:00</time> -
-                <time datetime="13:00">13:00</time>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <nav class="footer-column footer-menu">
-          <h4>Menu</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Lessen</a></li>
-            <li><a href="#">Tarieven</a></li>
-            <li><a href="#">Lesrooster</a></li>
-            <li><a href="#">Ons team</a></li>
-            <li><a href="#">Inschrijven</a></li>
-            <li><a href="#">Nieuws</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-
-        <div class="footer-column">
-          <h4>Volg ons</h4>
-          <div class="social-icon-container">
-            <a
-              href="https://www.instagram.com/fightmasters/"
-              class="social-icon"
-              title="Instagram"
-              target="_blank"
-            >
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a
-              href="https://www.facebook.com/Fightmasters-185509661818173/"
-              class="social-icon"
-              title="Facebook"
-              target="_blank"
-            >
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a
-              href="https://www.youtube.com/channel/UCI1VJqgi81pnRUKaG9MBDjA"
-              class="social-icon"
-              title="YouTube"
-              target="_blank"
-            >
-              <i class="fab fa-youtube"></i>
-            </a>
-          </div>
-        </div>
-
-        <div class="footer-column">
-          <h4>Contact</h4>
-          <h5>Fightmasters</h5>
-          <address>
-            Markerkant 1525K<br />
-            1314 AV ALMERE
-          </address>
-
-          <p>
-            <i class="fas fa-envelope"></i>
-            <a href="info@fightmasters.nl">info@fightmasters.nl</a><br />
-            <i class="fas fa-phone"></i>
-            <a href="tel:0365251397">036 525 13 97</a><br />
-            (ma t/m vrij 18.00-21.00 uur)
-          </p>
-
-          <p>
-            IBAN: NL59INGB0004475217<br />
-            KvK: 64934578
-          </p>
-        </div>
+    <!-- Footer Copyright -->
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; Copyright 2024 Fightmasters. Alle rechten voorbehouden.
       </div>
+    </div>
+  </footer>
 
-      <div class="footer-copyright">
-        <div class="container">
-          &copy; Copyright 2024 Fightmasters. Alle rechten voorbehouden.
-        </div>
-      </div>
-    </footer>
-
-    <a
-      href="#top"
-      class="back-to-top"
-      id="backToTopBtn"
-      role="button"
-      aria-label="Scroll naar boven"
-      >&#x21E7; Naar boven</a
-    >
+  <!-- Scroll To Top Widget -->
+  <a
+    href="#top"
+    class="back-to-top"
+    id="backToTopBtn"
+    role="button"
+    aria-label="Scroll naar boven"
+    >&#x21E7; Naar boven</a>
   </body>
 </html>
