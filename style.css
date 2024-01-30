@@ -1269,7 +1269,7 @@ address {
 .back-to-top {
   opacity: 1;
   position: fixed;
-  bottom: 16px;
+  bottom: calc(57px + 16px);
   right: 16px;
   background-color: #e40613;
   color: white;
@@ -1301,4 +1301,4 @@ address {
 .show {
     opacity: 1 !important;
     transform: translateY(0) !important;
-  }
+}
