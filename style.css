@@ -542,6 +542,7 @@ a.button {
 
 a.button:hover {
   color: #e40613 !important;
+  border: 1px #e40613 solid;
 }
 
 a.button-b:hover {
