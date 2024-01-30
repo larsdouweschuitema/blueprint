@@ -300,16 +300,16 @@ nav a {
 }
 
 .slider-controls {
+  display: flex;
   position: absolute;
   bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
+  gap: 8px;
 }
 
 @media screen and (min-width: 1024px) {
   .slider-controls {
-    display: flex;
-    gap: 8px;
     bottom: 116px;
   }
 }
