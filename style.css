@@ -81,7 +81,7 @@ p {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  gap: 4px;
+  gap: 8px;
 }
 
 .topbar-area-contact-info__details a:hover, .topbar-area-contact-info__details a:focus {
