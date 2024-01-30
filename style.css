@@ -134,9 +134,14 @@ p {
 
 /* https://unused-css.com/blog/css-only-hamburger-menu/ */
 
-.topbar-area .logo {
+.topbar-area a.topbar-area-logo {
   flex: 1;
   padding-left: 0;
+}
+
+.topbar-area a.topbar-area-logo img {
+  height: auto;
+  width: 200px;
 }
 
 .hamburger-container {
@@ -225,7 +230,7 @@ nav a {
   cursor: pointer;
 }
 
-.hamburger, .topbar-area-contact-info__socials, .topbar-area-contact-info__details {
+.hamburger, .topbar-area-contact-info__socials, .topbar-area-contact-info__details, .topbar-area-logo {
   z-index: 60;
 }
 
