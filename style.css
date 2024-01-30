@@ -1133,8 +1133,8 @@ footer h5 {
   }
 
   .footer-column:nth-child(1) {
-    flex: 0 0 30%;
-    max-width: 30%;
+    flex: 0 0 40%;
+    max-width: 40%;
   }
 
   .footer-column:nth-child(2) {
@@ -1143,13 +1143,13 @@ footer h5 {
   }
 
   .footer-column:nth-child(3) {
-    flex: 0 0 20%;
-    max-width: 20%;
+    flex: 0 0 15%;
+    max-width: 15%;
   }
 
   .footer-column:nth-child(4) {
-    flex: 0 0 29%;
-    max-width: 29%;
+    flex: 0 0 24%;
+    max-width: 24%;
   }
 }
 
