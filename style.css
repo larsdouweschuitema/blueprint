@@ -979,19 +979,36 @@ a.button::after {
   background-color: #fff;
   border-radius: 4px;
   overflow: hidden;
-  border: 1px solid #f1f0f0;
 }
 
 .news-area__image {
+  overflow: hidden;
+  display: flex;
+}
+
+.news-area__image img {
   width: 100%;
   height: auto;
-  margin: 0 0 16px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.news-area__image img:hover {
+  transform: scale(1.1);
 }
 
 .news-area__title {
   font-size: 24px;
-  margin: 0 16px 16px 16px;
+  margin: 16px;
   line-height: 1;
+}
+
+.news-area__title a {
+  text-decoration: none;
+  color: black;
+}
+
+.news-area__title a:hover, .news-area__title:focus {
+  color: #e40613;
 }
 
 .news-area__description {
