@@ -6,22 +6,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function changeSlide(slideNumber) {
     const controlLinks = document.querySelectorAll(".control-link");
-    controlLinks.forEach((link) => link.classList.remove("active"));
-
     const selectedLink = document.querySelector(
       `.slider-controls a:nth-child(${slideNumber})`
     );
-    selectedLink.classList.add("active");
 
-    const slides = document.querySelector(".slides");
-    const targetSlide = document.getElementById(`slide-${slideNumber}`);
+    if (!selectedLink.classList.contains("active")) {
+      // Remove active class from all control links
+      controlLinks.forEach((link) => link.classList.remove("active"));
 
-    // Adjust the scroll amount based on screen width
-    const screenWidth = window.innerWidth;
-    const scrollAmount =
-      screenWidth > 768 ? targetSlide.offsetWidth : screenWidth;
+      // Add active class to the clicked control link
+      selectedLink.classList.add("active");
 
-    slides.scrollLeft = targetSlide.offsetLeft - scrollAmount / 2;
+      // Update the active slide (optional: scroll to the corresponding slide)
+      const slides = document.querySelector(".slides");
+      const targetSlide = document.getElementById(`slide-${slideNumber}`);
+      const screenWidth = window.innerWidth;
+      const scrollAmount =
+        screenWidth > 768 ? targetSlide.offsetWidth : screenWidth;
+
+      slides.scrollLeft = targetSlide.offsetLeft - scrollAmount / 2;
+    }
   }
 
   function startAutoplay() {
@@ -50,20 +54,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function changeSlide(slideNumber) {
   const controlLinks = document.querySelectorAll(".control-link");
-  controlLinks.forEach((link) => link.classList.remove("active"));
-
   const selectedLink = document.querySelector(
     `.slider-controls a:nth-child(${slideNumber})`
   );
-  selectedLink.classList.add("active");
 
-  const slides = document.querySelector(".slides");
-  const targetSlide = document.getElementById(`slide-${slideNumber}`);
+  if (!selectedLink.classList.contains("active")) {
+    // Remove active class from all control links
+    controlLinks.forEach((link) => link.classList.remove("active"));
 
-  // Adjust the scroll amount based on screen width
-  const screenWidth = window.innerWidth;
-  const scrollAmount =
-    screenWidth > 768 ? targetSlide.offsetWidth : screenWidth;
+    // Add active class to the clicked control link
+    selectedLink.classList.add("active");
 
-  slides.scrollLeft = targetSlide.offsetLeft - scrollAmount / 2;
+    // Update the active slide (optional: scroll to the corresponding slide)
+    const slides = document.querySelector(".slides");
+    const targetSlide = document.getElementById(`slide-${slideNumber}`);
+    const screenWidth = window.innerWidth;
+    const scrollAmount =
+      screenWidth > 768 ? targetSlide.offsetWidth : screenWidth;
+
+    slides.scrollLeft = targetSlide.offsetLeft - scrollAmount / 2;
+  }
 }
