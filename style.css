@@ -351,7 +351,6 @@ nav a {
 .submenu a:hover,
 .submenu a:focus {
   background: #e40613;
-  border: 1px white solid;
   color: white;
 }
 
