@@ -46,6 +46,7 @@ p {
   padding: 16px 0;
   margin: 0 16px;
   width: calc(100% - 32px);
+  position: relative;
 }
 
 @media (min-width: 640px) {
@@ -220,6 +221,9 @@ nav a {
   width: 32px;
   flex-direction: column;
   cursor: pointer;
+}
+
+.hamburger, .topbar-area-contact-info__socials, .topbar-area-contact-info__details {
   z-index: 60;
 }
 
