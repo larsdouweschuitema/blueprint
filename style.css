@@ -262,7 +262,7 @@ nav a {
   }
 
   .hamburger-container .drawer li:last-child a {
-    background: red;
+    background: #e40613;
     margin-right: 0;
     padding: 8px 16px;
   }
@@ -935,6 +935,15 @@ a.button::after {
   .fighter:nth-child(-n+3) {
     display: flex;
   }
+}
+
+a.fighter__info-social-icon i {
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+}
+
+a.fighter__info-social-icon i:hover, a.fighter__info-social-icon i:focus {
+  color: #e40613;
 }
 
 .fighter__image {
