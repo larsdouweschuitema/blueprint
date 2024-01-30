@@ -968,7 +968,6 @@ address {
 }
 
 .back-to-top {
-  opacity: 0;
   position: fixed;
   bottom: 16px;
   right: 16px;

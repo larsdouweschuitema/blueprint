@@ -50,6 +50,46 @@ document.addEventListener("DOMContentLoaded", function () {
       backToTopBtn.classList.remove("show");
     }
   });
+
+  backToTopBtn.addEventListener("click", function (event) {
+    if (typeof event.preventDefault === "function") {
+      event.preventDefault();
+    }
+    scrollToTop();
+  });
+
+  function scrollToTop() {
+    const startPosition = window.scrollY;
+    const targetPosition = 0;
+    const distance = targetPosition - startPosition;
+    const duration = 500; // Adjust the duration as needed
+    let startTime;
+
+    function animation(currentTime) {
+      if (startTime === undefined) startTime = currentTime;
+      const elapsedTime = currentTime - startTime;
+      const easeInOutCubic = easeInOutCubicFunction(
+        elapsedTime,
+        startPosition,
+        distance,
+        duration
+      );
+      window.scrollTo(0, easeInOutCubic);
+
+      if (elapsedTime < duration) {
+        requestAnimationFrame(animation);
+      }
+    }
+
+    function easeInOutCubicFunction(t, b, c, d) {
+      t /= d / 2;
+      if (t < 1) return (c / 2) * t * t * t + b;
+      t -= 2;
+      return (c / 2) * (t * t * t + 2) + b;
+    }
+
+    requestAnimationFrame(animation);
+  }
 });
 
 function changeSlide(slideNumber) {
