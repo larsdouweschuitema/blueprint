@@ -197,6 +197,7 @@ p {
   width: 100%;
   z-index: 50;
   padding-top: 191px;
+  overflow-y: auto;
 }
 
 .drawer a {
