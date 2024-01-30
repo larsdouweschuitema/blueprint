@@ -919,6 +919,22 @@ a.button::after {
   border: 1px solid #f1f0f0;
 }
 
+@media screen and (max-width: 768px) {
+  .fighter {
+    display: none;
+  }
+
+  .fighter:nth-child(-n+2) {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .fighter:nth-child(-n+3) {
+    display: flex;
+  }
+}
+
 .fighter__image {
   border-bottom: 1px solid #ddd;
   border-radius: 50%;
