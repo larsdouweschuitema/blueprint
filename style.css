@@ -208,6 +208,11 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
+  .drawer {
+    width: 100%;
+    overflow-y: initial;
+  }
+
   .drawer-top-items {
     display: none;
   }
