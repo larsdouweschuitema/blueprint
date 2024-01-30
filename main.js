@@ -14,3 +14,17 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+function changeSlide(slideNumber) {
+  const controlLinks = document.querySelectorAll(".control-link");
+  controlLinks.forEach((link) => link.classList.remove("active"));
+
+  const selectedLink = document.querySelector(
+    `.slider-controls a:nth-child(${slideNumber})`
+  );
+  selectedLink.classList.add("active");
+
+  const slides = document.querySelector(".slides");
+  const targetSlide = document.getElementById(`slide-${slideNumber}`);
+  slides.scrollLeft = targetSlide.offsetLeft;
+}
