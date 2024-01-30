@@ -455,14 +455,11 @@ p {
   }
 }
 
-main > img {
-  height: auto;
-  width: 100%;
-}
-
 .intro img {
   border: 16px #e40613 solid;
   box-sizing: border-box;
+  height: auto;
+  width: 100%;
 }
 
 a.button {
@@ -559,6 +556,8 @@ a.button::after {
 
 .featured-services__image {
   object-fit: cover;
+  max-width: 100%;
+  height: auto;
 }
 
 .features-area {
