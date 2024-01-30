@@ -968,6 +968,7 @@ address {
 }
 
 .back-to-top {
+  opacity: 1;
   position: fixed;
   bottom: 16px;
   right: 16px;
@@ -978,6 +979,10 @@ address {
   cursor: pointer;
   transition: background-color 0.3s;
   text-decoration: none;
+}
+
+.back-to-top.hide {
+  opacity: 0;
 }
 
 .back-to-top:hover,
