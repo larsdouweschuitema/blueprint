@@ -864,6 +864,14 @@ a.button::after {
 .fighters-area {
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+
+.fighters-area__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .fighters-area-container {
