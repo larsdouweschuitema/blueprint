@@ -688,6 +688,10 @@ a.button::after {
   color: white;
 }
 
+.features-column span.text-underline {
+  text-decoration: underline;
+}
+
 .features-column h2 {
   font-size: 24px;
   color: black;
