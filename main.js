@@ -13,8 +13,15 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     selectedLink.classList.add("active");
 
+    const slides = document.querySelector(".slides");
     const targetSlide = document.getElementById(`slide-${slideNumber}`);
-    slides.scrollLeft = targetSlide.offsetLeft;
+
+    // Adjust the scroll amount based on screen width
+    const screenWidth = window.innerWidth;
+    const scrollAmount =
+      screenWidth > 768 ? targetSlide.offsetWidth : screenWidth;
+
+    slides.scrollLeft = targetSlide.offsetLeft - scrollAmount / 2;
   }
 
   function startAutoplay() {
@@ -52,5 +59,11 @@ function changeSlide(slideNumber) {
 
   const slides = document.querySelector(".slides");
   const targetSlide = document.getElementById(`slide-${slideNumber}`);
-  slides.scrollLeft = targetSlide.offsetLeft;
+
+  // Adjust the scroll amount based on screen width
+  const screenWidth = window.innerWidth;
+  const scrollAmount =
+    screenWidth > 768 ? targetSlide.offsetWidth : screenWidth;
+
+  slides.scrollLeft = targetSlide.offsetLeft - scrollAmount / 2;
 }
