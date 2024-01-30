@@ -1,4 +1,30 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const body = document.body;
+  const drawer = document.querySelector(".drawer");
+
+  // Function to open the menu
+  function openMenu() {
+    body.classList.add("menu-open");
+    // You might want to add additional logic or styles specific to when the menu is open
+  }
+
+  // Function to close the menu
+  function closeMenu() {
+    body.classList.remove("menu-open");
+    // You might want to add additional logic or styles specific to when the menu is closed
+  }
+
+  // Example: Add click event to a menu toggle button
+  const menuToggleButton = document.getElementById("hamburger-toggle");
+
+  menuToggleButton.addEventListener("click", function () {
+    if (body.classList.contains("menu-open")) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  });
+
   // Slider functionality
   const slides = document.querySelector(".slides");
   const totalSlides = document.querySelectorAll(".slide").length;

@@ -258,14 +258,18 @@ nav a {
   color: #fc0513;
 }
 
+.menu-open .hamburger {
+  position: fixed;
+  right: 16px;
+}
+
 .hamburger {
   height: 24px;
   width: 32px;
   flex-direction: column;
   cursor: pointer;
+  position: relative;
   z-index: 60;
-  right: 16px;
-  position: fixed; // only when mobile menu is open
 }
 
 @media screen and (min-width: 1280px) {
