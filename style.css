@@ -370,6 +370,7 @@ nav a {
 
 .slider {
   background: black;
+  height: 500px; // To prevent layout shifting
   width: 100%;
   text-align: center;
   overflow: hidden;
