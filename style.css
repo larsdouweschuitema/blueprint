@@ -11,8 +11,6 @@ body {
 
 a {
   color: #e40613;
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
 }
 
 a:hover,
@@ -71,6 +69,11 @@ p {
   padding: 0;
 }
 
+.topbar-area-contact-info__socials .social-icon i {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
 .topbar-area-contact-info__details {
   color: white;
   display: flex;
@@ -82,6 +85,10 @@ p {
   align-items: center;
   text-decoration: none;
   gap: 8px;
+}
+
+.topbar-area-contact-info__socials .social-icon i:hover, .topbar-area-contact-info__socials .social-icon i:focus {
+  color: #e40613;
 }
 
 .topbar-area-contact-info__details a:hover, .topbar-area-contact-info__details a:focus {
