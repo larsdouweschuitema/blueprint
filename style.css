@@ -272,8 +272,8 @@ nav a {
     padding: 8px 16px;
   }
 
-  .hamburger-container .drawer li:last-child a:hover,
-  .hamburger-container .drawer li:last-child a:focus {
+  .hamburger-container .drawer > ul > li:last-child > a:hover,
+  .hamburger-container .drawer > ul > li:last-child > a:focus {
     background: transparent;
     border: 1px white solid;
     color: white;
