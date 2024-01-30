@@ -288,11 +288,11 @@ nav a {
 }
 
 #slide-2 {
-  background-image: url("assets/img/hero-13.jpg");
+  background-image: url("assets/img/hero-13.webp");
 }
 
 #slide-3 {
-  background-image: url("assets/img/hero-11.jpg");
+  background-image: url("assets/img/hero-11.webp");
 }
 
 #slide-4 {
@@ -681,7 +681,7 @@ a.button::after {
 .get-in-touch-area {
   background: #e40613;
   padding: 128px 0;
-  background-image: url("assets/img/hero-10.jpg");
+  background-image: url("assets/img/hero-10.webp");
   background-size: cover;
   background-position: center;
   position: relative;
